@@ -36,4 +36,4 @@ Assurer une cohérence visuelle entre les différentes éléments du site.
 Écrire un courriel au client (​lechainon@smnarnold.com​) pour lui expliquer la démarcheartistique de son équipeÉvaluation spéciale [5%]:
 Concevoir la maquette d’une page de détail d’une nouvelle. (375px - 768px - 1200px. Ilest impératif que l’équipe approuve que ce design est réalisable avant de la soumettre)[3%]
 Créer un favicon [1%]
-Texte explicatif expliquant la direction artistique du site et comment elle permettra auclient de se démarquer de la compétition. (entre 175 et 350 mots. Attention au français)[1%]
+Texte explicatif expliquant la direction artistique du site et comment elle permettra auclient de se démarquer de la compétition. (entre 175 et 350 mots. Attention au français)[1%].
