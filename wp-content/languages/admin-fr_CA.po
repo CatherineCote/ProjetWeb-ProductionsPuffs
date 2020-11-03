@@ -9427,6 +9427,7 @@ msgstr "Pour inviter un utilisateur de ce réseau sur ce site, saisissez son adr
 msgid "Show Toolbar when viewing site"
 msgstr "Afficher la barre d&rsquo;outils lorsque vous visitez le site"
 
+#. translators: %s: HelpHub URL
 #. translators: %s: HelpHub URL.
 #. translators: %s: HelpHub URL
 #. translators: %s: Documentation URL.
