@@ -37,7 +37,7 @@ h2 {
 	text-align: center;
 	width:30%;
 	letter-spacing: 8px;
-	font-size:20px;
+	font-size:100%;
 	line-height: 3;
 	transform:translateX(50%);
 }
@@ -72,10 +72,10 @@ h2 {
 .raison{
 	color:white;
 	width:40%;
+	height:20vmin;
 	letter-spacing: 3px;
 	font-size:14px;
 	background-color:rgba(9, 118, 165,0.5);
-	padding:5px;
 	margin-right:19%;
 	margin-top:10%;
 	display:flex;
@@ -83,6 +83,41 @@ h2 {
 	flex-wrap:wrap;
 	text-align:center;
 	transform:translateX(10%);
+}
+.wrapperRaison{
+	display:flex;
+	width:100%;
+	justify-content:flex-end;
+}
+.temoin{
+	text-align:center;
+	color:white;
+	width:40%;
+	height:20vmin;
+	font-size:14px;
+	line-height: 3;
+	background-color:rgba(0, 0, 0,0.5);
+	transform:translanteX(-50%);
+}
+.carrousel{
+	text-align:center;
+	color:white;
+	width:60%;
+	height:30vmin;
+	font-size:12px;
+	line-height: 5;
+	background-color:rgba(0, 0, 0,0.5);
+	margin-left:18%;
+}
+.wrapperCarrousel{
+position:absolute;
+display:flex;
+justify-content: space-evenly;
+align-items:flex-end;
+width:80%;
+height:80vmin;
+right:15%;
+z-index:4;
 }
 
 .blockBleu{
@@ -102,12 +137,13 @@ h2 {
 	background: rgba(0, 0, 0, 0.5);
 	position:absolute;
 	right:15%;
-	transform:translateY(110%);
+	transform:translateY(100%);
+	margin-top:15%;
 	z-index:1;
-	
 }
+
 .joindre:before{
-	display:none;
+display:none;
  content: '';
  background: white;
  width:110%; 
@@ -155,10 +191,22 @@ h2 {
 	<button type="button" class="don"> Faire un don</button>
 	<button type="button" class="testament"> Don par testament</button>
 	</div>
-	<div class="raison">
+	<div class="wrapperRaison"><div class="raison">
 		<h4>Pourquoi faire un don</h4>
 		<p>Les dons nous permettent d'aider les femmes en détresses.</p>
-	</div>
+	</div></div>
+
+	<div class="wrapperCarrousel">
+		<div class="temoin">
+			<p>"Cette endroit a changé ma vie"</p>
+			<p>-Mme Tremblay</p>
+		</div>
+	<div class="carrousel">
+		<p>Nouvelles</p>
+		<p>Évènement</p>
+	</div></div>
+	
+	
 	<div class="blur">
 		<div class="joindre">
 		<p>JOINDRE
@@ -175,7 +223,6 @@ h2 {
 		514 843-4354
 		514 845-0151</span></p>
 	</div></div>
-	
 		
 		
 		</div>
