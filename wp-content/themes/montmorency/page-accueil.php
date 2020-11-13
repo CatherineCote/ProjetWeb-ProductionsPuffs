@@ -241,6 +241,85 @@ z-index:4;
 	position:relative;
 }
 
+/*MEDIAQUERIES TABLETTE (375PX).......................................................*/
+@media screen and (max-width: 768px) and (min-width: 0px){
+	.slogan{
+	width:60%;
+	letter-spacing: 6px;
+	font-size:90%;
+	line-height: 2;
+	transform:translate(0%);
+}
+.wrapperButton{
+	width:40%;
+	left:0;
+	transform:translateX(75%);
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+}
+.don{
+	font-size:13px;
+}
+
+.testament{
+	margin-top:5%;
+}
+.raison{
+	width:60%;
+	height:40vmin;
+	letter-spacing: 2px;
+	font-size:13px;
+	margin-top:40%;
+	transform:translateX(0%);
+}
+.temoin{
+	text-align:center;
+	width:100%;
+	height:30vmin;
+	font-size:14px;
+	transform:translateX(10%);
+}
+.carrousel{
+	width:100%;
+	height:40vmin;
+	font-size:12px;
+}
+.wrapperCarrousel{
+position:absolute;
+display:flex;
+justify-content: center;
+flex-wrap:wrap;
+width:80%;
+height:80vmin;
+margin-top:90vmin;
+}
+.joindre{
+	position:absolute;
+	display:flex;
+	width:100%;
+}
+.sectionFlex{
+ display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-wrap:nowrap;
+	width:70%;
+	height:60vmin;
+	margin-top:120vmin;
+	right:13%;
+}
+.blockBleu{
+	height:1200px;
+}
+.wrapperService{
+	transform:translateY(100%) translateX(75%);
+	font-size:13px;
+}
+.wrapperRappel{
+	transform:translateY(200%) translateX(-35%);
+}
+}
 </style>
 	<article>
 		<div class=" titre">
