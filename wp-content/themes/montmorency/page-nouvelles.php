@@ -17,92 +17,113 @@ if ( have_posts() ) :
 			height: 100%;
 			width: 100%;
 		}
+
 		/* Entete de la page Nouvelles */
 		.enteteNouvelles{
-			width: 25%;
- 			height: 15vmin;
- 			background-color: black;
- 			opacity: 0.5;
- 			display: flex;
-  			justify-content: center;
-  			align-items: center;
- 			transform: translateX(150%);
-  			color: white;
- 			letter-spacing: 15px;
- 			font-family: helvetica;
- 			font-size: 100%;
-		}
-		/* Contenu de la page */
-
-		.contenuNouvellesRecentes{
+			width: 50%;
+			height: 20vmin;
+			background-color: black;
+			color: white;
 			display: flex;
-  			flex-wrap: wrap;
-  			justify-content: flex-start;
-  			width: 60%;
-  			transform: translateX(35%);
+			justify-content: center;
+			align-items: center;
+			transform: translateX(50%);
+			font-size: 100%;
+			font-family: helvetica;
+			letter-spacing: 2px;
+			opacity: 0.5;
+		}
+
+		/* Contenu des nouvelles récentes */
+		.contenuNouvellesRecentes{
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
 		}
 
 		.nouvelleRecente{
-			width: 40%;
-			height: 60vmin;
+			width: 50%;
 			display: flex;
-			justify-content: flex-end;
-			transform: translate(30%, 20%);
-
+			flex-wrap: wrap;
+			justify-content: flex-start;
 		}
 
-		.nouvelleRecente p{
-			padding: 2%;
-  			text-align: center;
- 			color: white;
- 			letter-spacing: 2px;
-  			font-family: helvetica;
- 			font-size: 150%; 
-			position: absolute;
-			background-color: #0976A5;
-			opacity: 0.75;
-			top: 65%;
-			
+		.photo{
+			width:80%;
+			display: flex;
 		}
 
-		.informationBal2019{
-			height: 100%;
+		.InformationBal2019{
 			width: 100%;
 			display: flex;
+			justify-content: flex-start;
+			flex-wrap: wrap;
 		}
 
 		.titreBal2019{
+			width: 50%;
+			display: flex;
+			justify-content: flex-start;
+			font-size: 200%;
+			letter-spacing: 2px;
+			transform: translateX(20%);
+		}
+
+		.texteBal2019{
+			width: 40%;
+			display: flex;
+			justify-content: flex-start;
+			text-align: center;
+			font-size: 150%;
+			letter-spacing: 1px;
+			transform: translateX(-125%) translateY(55%);
+			line-height: 1.3;
+		}
+
+		.ensembleSections{
 			width: 100%;
-			width: 50vmin;
-			background-color: blue;
-			position: absolute;
-			top: 30%;
+			display: flex;
+			justify-content: flex-end;
+			flex-wrap: wrap;
 		}
 
-		.section2019{
-			width: 20%;
-			height: 20%;
+		.sections{
+			width: 50%;
+			display: flex;
+			justify-content: flex-start;
+			flex-wrap:wrap;
 		}
 
-		.section2018{
-			width: 20%;
-			height: 20%;
+		.imageEvenement2019{
+			width:50%;
+			object-fit: none;
 		}
 
-		.section2017{
-			width: 20%;
-			height: 20%;
+
+
+		 /*.imageEvenement2019{
+			width: 60%;
+			justify-content: flex-start;
+			transform: translateY(-170%);
+			
+			
 		}
 
-		.section2016{
-			width: 20%;
-			height: 20%;
-		}
+		.t2019{
+			display: flex;
+			justify-content: center;
+			transform: translateY(-800%) translateX(100%);
+			background-color: #0976a5;
+			font-size: 300%;
+			height: 5vmin;
+			width: 10vmin;
+			opacity: 0.75;
+			z-index: 1;
+		} */
 
-		.section2015{
-			width: 20%;
-			height: 20%;
-		}
+
+		
 	</style>
 
 	<article>
@@ -137,30 +158,26 @@ La campagne annuelle de souscription bat son plein. Les donateurs et supporters 
 
 Vous aussi pouvez participer à cet élan de générosité. </h4>
 		</div>
-
-		<div class="section2019">
-			<p> 2019 </p>
-			<img class="imageEvenement2019" src="http://85.lechainon.org/wp-content/uploads/2019/05/305A5840.jpg">
 		</div>
 
-		<div class="section2018">
-			<p> 2018 </p>
-			<img class="imageEvenement2018" src="http://85.lechainon.org/wp-content/uploads/2019/06/DSC_6839.jpg">
-		</div>
+		<div class="ensembleSections">
 
-		<div class="section2017">
-			<p> 2017 </p>
-			<img class="imageEvenement2017" src="http://85.lechainon.org/wp-content/uploads/2019/06/5_BalAnnChainon-4.jpg">
-		</div>
-
-		<div class="section2016">
-			<p> 2016 </p>
-			<img class="imageEvenement2016" src="http://85.lechainon.org/wp-content/uploads/2019/06/Fondation_Le_Chainon_Gala_2016_IMG_3199_Photo_Marc_Gibert_ADECOM_2.jpg">
-		</div>
-
-		<div class="section2015">
-			<p> 2015 </p>
-			<img class="imageEvenement2015" src="http://85.lechainon.org/wp-content/uploads/2019/06/DSC_5588.jpg">
+			<div class="sections">
+				<h3 class="t2019"> 2019 </h3>
+				<img class="imageEvenement2019" src="http://85.lechainon.org/wp-content/uploads/2019/05/305A5840.jpg">
+			
+				<p class="t2018"> 2018 </p>
+				<img class="imageEvenement2018" src="http://85.lechainon.org/wp-content/uploads/2019/06/DSC_6839.jpg">
+			
+				<p class="t2017"> 2017 </p>
+				<img class="imageEvenement2017" src="http://85.lechainon.org/wp-content/uploads/2019/06/5_BalAnnChainon-4.jpg">
+			
+				<p class="t2016"> 2016 </p>
+				<img class="imageEvenement2016" src="http://85.lechainon.org/wp-content/uploads/2019/06/Fondation_Le_Chainon_Gala_2016_IMG_3199_Photo_Marc_Gibert_ADECOM_2.jpg">
+			
+				<p class="t2015"> 2015 </p>
+				<img class="imageEvenement2015" src="http://85.lechainon.org/wp-content/uploads/2019/06/DSC_5588.jpg">
+			</div>
 		</div>
 	</div>
 <?php endwhile; // Fermeture de la boucle ?>
