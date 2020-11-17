@@ -41,6 +41,9 @@ h2 {
 	line-height: 3;
 	transform:translateX(50%);
 }
+hr{
+	width:60%;
+}
 .contenu{
 	position:relative;
 	display:flex;
@@ -51,7 +54,9 @@ h2 {
 	width:40%;
 	right:0;
 	transform:translateX(-25%);
+	/*background-color:red;*/
 }
+
 .don{
 	border:none;
 	background-color:rgba(9, 118, 165,0.5);
@@ -61,8 +66,6 @@ h2 {
 	height:15vmin;
 	margin-right:5%;
 }
-
-
 .testament{
 	border:none;
 	background-color:rgba(9, 118, 165,0.5);
@@ -85,6 +88,7 @@ h2 {
 	flex-wrap:wrap;
 	text-align:center;
 	transform:translateX(10%);
+	
 }
 .wrapperRaison{
 	display:flex;
@@ -100,6 +104,7 @@ h2 {
 	line-height: 3;
 	background-color:rgba(0, 0, 0,0.5);
 	transform:translateY(-25%);
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 #nom{
 	font-size:12px;
@@ -107,13 +112,21 @@ h2 {
 .carrousel{
 	text-align:center;
 	color:white;
-	width:60%;
+	width:50%;
 	height:30vmin;
 	font-size:12px;
 	line-height: 5;
 	background-color:rgba(0, 0, 0,0.5);
 	margin-left:18%;
 }
+.swiper-container{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:100%;
+	height:100%;
+}
+
 .wrapperCarrousel{
 position:absolute;
 display:flex;
@@ -144,6 +157,7 @@ z-index:4;
 	background-color:rgba(0, 0, 0,0.5);
 	color:white;
 	position:relative;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 .ecoute{
 	display:flex;
@@ -154,6 +168,30 @@ z-index:4;
 	background-color:rgba(0, 0, 0,0.5);
 	color:white;
 	position:relative;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+.from-bottom:before, 
+.from-bottom:after {
+	left: 0;
+	height: 0;
+	width: 100%;
+}
+
+.from-bottom:before {
+	top: 0;	
+	border: 1px solid white;
+	border-top: 0;
+	border-bottom: 0;
+}
+
+.from-bottom:after {
+	bottom: 0;
+	height: 0;
+}
+
+.from-bottom:hover:before,
+.from-bottom:hover:after {
+	height: 100%;
 }
 
 .blockBleu{
@@ -203,6 +241,13 @@ z-index:4;
 	font-size:11px;
 	line-height: 2;
 	padding:10%;
+	transition-property: transform;
+  transition-duration: 1s;
+  transform: translateY(0);
+}
+.joindre p:hover{
+	transform: translateY(-10%);
+	transition-timing-function: cubic-bezier(.6,-0.85,.21,1.53);
 }
 #joindre{
 	letter-spacing: 2px;
@@ -227,6 +272,65 @@ z-index:4;
 	background-color:rgba(0, 0, 0,0.5);
 	color:white;
 	position:relative;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+}
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn:hover {
+	color: white;
+	transition-delay: .5s;
+}
+
+.btn:hover:before {
+	transition-delay: 0s;
+}
+
+.btn:hover:after {
+	background: rgba(9, 118, 165, 0.5);
+	transition-delay: .35s;
+}
+.hebergement:hover:after {
+	background: LightBlue;
+	transition-delay: .35s;
+}
+.ecoute:hover:after {
+	background: LightBlue;
+	transition-delay: .35s;
+}
+.don02:hover:after {
+	background: LightBlue;
+	transition-delay: .35s;
+}
+.benevole:hover:after {
+	background: LightBlue;
+	transition-delay: .35s;
+}
+.from-left:before, 
+.from-left:after {
+	top: 0;
+	width: 0;
+	height: 100%;
+}
+
+.from-left:before {
+	right: 0;
+	border: 1px solid white;
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-left:after {
+	left: 0;
+}
+
+.from-left:hover:before,
+.from-left:hover:after {
+	width: 100%;
 }
 .benevole{
 	display:flex;
@@ -239,6 +343,7 @@ z-index:4;
 	background-color:rgba(0, 0, 0,0.5);
 	color:white;
 	position:relative;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 /*MEDIAQUERIES TABLETTE (375PX).......................................................*/
@@ -249,6 +354,9 @@ z-index:4;
 	font-size:90%;
 	line-height: 2;
 	transform:translate(0%);
+}
+hr{
+	width:60%;
 }
 .wrapperButton{
 	width:40%;
@@ -336,7 +444,7 @@ margin-top:90vmin;
 	<div class="bodyAccueil">
 	<div class="headerAccueil">
 	<img src="https://images.unsplash.com/photo-1535659513767-f1a7b068ebc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"/>
-		<div class="slogan"><p>La principale ressource d'hébergement pour femmes en difficulté au Québec.</p></div>
+		<div class="slogan"><hr><p>La principale ressource d'hébergement pour femmes en difficulté au Québec.</p><hr></div>
 	</div>
 	<div class="contenu">
 	<div class="wrapperButton">
@@ -349,13 +457,23 @@ margin-top:90vmin;
 	</div></div>
 
 	<div class="wrapperCarrousel">
-		<div class="temoin">
+		<div class="temoin btn from-left">
 			<p>"Cette endroit a changé ma vie"</p>
 			<p id="nom">-Mme Tremblay</p>
 		</div>
 	<div class="carrousel">
-		<p>Nouvelles</p>
-		<p>Évènement</p>
+	<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">Nouvelle-1</div>
+        <div class="swiper-slide">Nouvelle-2</div>
+        <div class="swiper-slide">Nouvelle-3</div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+</div>
 	</div></div>
 	
 	<div class="sectionFlex">
@@ -366,6 +484,7 @@ margin-top:90vmin;
 		<span id="joindre">4373, ave. de l'Esplanade
 		Montréal (Québec) H2W 1T2
 		514 845-0151</span></p>
+		
 		<p>JOINDRE
 		LE MAGASIN<br><br><br>
 
@@ -373,15 +492,16 @@ margin-top:90vmin;
 		Montréal (Québec) H2W 1Z8
 		514 843-4354
 		514 845-0151</span></p>
+		
 	</div>
 		<div class="wrapperService">
-		<div class="hebergement">Service d'hébergement</div>
-		<div class="ecoute">Service d'écoute</div>
+		<div class="hebergement btn from-bottom">Service d'hébergement</div>
+		<div class="ecoute btn from-bottom">Service d'écoute</div>
 		</div>
 
 		<div class="wrapperRappel">
-		<button type="button" class="don02"> Faire un don</button>
-		<button type="button" class="benevole"> Devenez bénévole</button>
+		<button type="button" class="don02 btn from-left"> Faire un don</button>
+		<button type="button" class="benevole btn from-left"> Devenez bénévole</button>
 		
 		</div>
 	
@@ -394,14 +514,54 @@ margin-top:90vmin;
 		</div>
 	
 	</div>
-	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw==" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
 <script>
 	/*JAVA............................................................*/
+	
 	gsap.from('.bodyAccueil',{
   opacity:0,
   y:100,
   delay:0.5
+})
+gsap.from('hr', {
+  opacity:0,
+  width:0,
+  delay:0.9
+})
+gsap.from('.slogan', {
+  opacity:0,
+  duration:1.5,
+  delay:0.9
+})
+//SWIPPER..................................................................
+var mySwiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  loop: true,
+  slidesPerView: 2,
+      spaceBetween: 30,
+  autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+  
+
+  // If we need pagination
+  pagination: {
+	el: '.swiper-pagination',
+	clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
 })
 </script>
 
