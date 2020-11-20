@@ -79,7 +79,7 @@ hr{
 	width:40%;
 	height:20vmin;
 	letter-spacing: 3px;
-	font-size:14px;
+	font-size:100%;
 	background-color:rgba(9, 118, 165,0.5);
 	margin-right:19%;
 	margin-top:10%;
@@ -100,21 +100,21 @@ hr{
 	color:white;
 	width:40%;
 	height:20vmin;
-	font-size:14px;
+	font-size:100%;
 	line-height: 3;
 	background-color:rgba(0, 0, 0,0.5);
 	transform:translateY(-25%);
 	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
 }
 #nom{
-	font-size:12px;
+	font-size:75%;
 }
 .carrousel{
 	text-align:center;
 	color:white;
 	width:50%;
 	height:30vmin;
-	font-size:12px;
+	font-size:75%;
 	line-height: 5;
 	background-color:rgba(0, 0, 0,0.5);
 	margin-left:18%;
@@ -196,7 +196,7 @@ z-index:4;
 
 .blockBleu{
 	width:100%;
-	height:1100px;
+	height:2000px;
 	clip-path: polygon(0 0, 100% 41%, 100% 100%, 0% 100%);
 	background-color:rgba(9, 118, 165,0.5);
 	
@@ -238,7 +238,7 @@ z-index:4;
 }
 .joindre p{
 	letter-spacing: 2px;
-	font-size:11px;
+	font-size:75%;
 	line-height: 2;
 	padding:10%;
 	transition-property: transform;

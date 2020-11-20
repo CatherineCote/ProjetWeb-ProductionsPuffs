@@ -106,6 +106,7 @@ img:hover {
   opacity: 0.9;
   position: fixed;
   display: none;
+  top:0;
 }
 
 .carte01 p {
@@ -123,6 +124,7 @@ img:hover {
   position: fixed;
   display: none;
   z-index:1;
+  top:0;
 }
 
 .carte02 p {
@@ -136,10 +138,10 @@ img:hover {
   height: 50vmin;
   background-color: black;
   opacity: 0.9;
-  margin-top:60vmin;
   position: fixed;
   display: none;
   z-index:1;
+  top:10%;
 }
 
 .carte03 p {
@@ -153,10 +155,10 @@ img:hover {
   height: 50vmin;
   background-color: black;
   opacity: 0.9;
-  margin-top:100vmin;
   position: fixed;
   display: none;
   z-index:1;
+  top:10%;
 }
 
 .carte04 p {
@@ -170,7 +172,7 @@ img:hover {
   height: 50vmin;
   background-color: black;
   opacity: 0.9;
-  margin-top:140vmin;
+  top:25%;
   position: fixed;
   display: none;
   z-index:1;
@@ -187,7 +189,7 @@ img:hover {
   height: 50vmin;
   background-color: black;
   opacity: 0.9;
-  margin-top:160vmin;
+  top:25%;
   position: fixed;
   display: none;
   z-index:1;
@@ -206,7 +208,7 @@ img:hover {
   opacity: 0.9;
   position: fixed;
   display: none;
-  margin-top:220vmin;
+  top:35%;
   z-index:1;
 }
 
@@ -222,7 +224,7 @@ img:hover {
   background-color: black;
   opacity: 0.9;
   position: fixed;
-  margin-top:230vmin;
+  top:35%;
   display: none;
   z-index:1;
 }
@@ -239,7 +241,7 @@ img:hover {
   background-color: black;
   opacity: 0.9;
   position: fixed;
-  margin-top:280vmin;
+  top:55%;
   display: none;
   z-index:1;
 }
@@ -256,7 +258,7 @@ img:hover {
   background-color: black;
   opacity: 0.9;
   position: fixed;
-  margin-top:330vmin;
+  top:55%;
   display: none;
   z-index:1;
 }
@@ -273,7 +275,7 @@ img:hover {
   background-color: black;
   opacity: 0.9;
   position: fixed;
-  margin-top:390vmin;
+  top:65%;
   display: none;
   z-index:1;
 }
@@ -295,7 +297,7 @@ img:hover {
   background-color: black;
   opacity: 0.9;
   position: fixed;
-  margin-top:430vmin;
+  top:75%;
   display: none;
   z-index:1;
 }
@@ -312,7 +314,7 @@ img:hover {
   background-color: black;
   opacity: 0.9;
   position: fixed;
-  margin-top:460vmin;
+  top:85%;
   display: none;
   z-index:1;
 }
@@ -328,7 +330,7 @@ img:hover {
   background-color: black;
   opacity: 0.9;
   position: fixed;
-  margin-top:510vmin;
+  top:90%;
   display: none;
   z-index:1;
 }
