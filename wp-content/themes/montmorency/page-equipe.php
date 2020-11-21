@@ -91,6 +91,7 @@ img {
   margin-right: auto;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  transition-duration: 1s;
 }
 
 img:hover {
@@ -410,7 +411,7 @@ label {
   width: 25%;
   height: 15vmin;
   letter-spacing: 5px;
-  font-size: 60%;
+  font-size: 40%;
   }
   span {
   font-size: 100%;
@@ -418,6 +419,15 @@ label {
 
 .sectionPost p {
   font-size: 80%;
+}
+.blockBleu{
+	width:100%;
+  margin-top:310vmin;
+	height:2000px;
+  visibility: hidden;
+	clip-path: polygon(0 0, 100% 41%, 100% 100%, 0% 100%);
+	background-color:rgba(9, 118, 165,0.5);
+	
 }
 }
 /*MEDIAQUERIES IPHONE (768PX)................................................*/
