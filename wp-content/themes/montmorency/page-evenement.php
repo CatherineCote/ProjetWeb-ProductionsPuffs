@@ -48,6 +48,17 @@ if ( have_posts() ) :
 	justify-content:space-between;
 	text-align:center;
 }
+.wrapperAnnonce{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	text-align:center;
+	background-color:black;
+	opacity:0.5;
+	margin-top:10%;
+	transform:translateX(20%);
+}
 .wrapperInvitation{
 	width:30%;
 }
@@ -172,6 +183,17 @@ h2{
 	height:20vmin;
 	
 }
+.wrapperAnnonce{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	text-align:center;
+	background-color:black;
+	opacity:0.5;
+	margin-top:10%;
+	transform:translateX(0%);
+}
 
 }
 @media screen and (max-width: 374px) and (min-width: 0px){
@@ -202,6 +224,18 @@ h2{
 	margin-top:10%;
 	font-size:60%;
 	
+}
+.wrapperAnnonce{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	text-align:center;
+	background-color:black;
+	opacity:0.5;
+	margin-top:10%;
+	transform:translateX(15%);
+	font-size:13px;
 }
 h2{
 	width:75%;

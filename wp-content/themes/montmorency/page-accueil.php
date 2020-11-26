@@ -44,7 +44,7 @@ h2 {
 hr{
 	width:60%;
 }
-.contenu{
+.contenuAccueil{
 	position:relative;
 	display:flex;
 	justify-content:flex-end;
@@ -584,7 +584,7 @@ margin-top:90vmin;
 	<img src="https://images.unsplash.com/photo-1535659513767-f1a7b068ebc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=751&q=80"/>
 		<div class="slogan"><hr><p>La principale ressource d'hébergement pour femmes en difficulté au Québec.</p><hr></div>
 	</div>
-	<div class="contenu">
+	<div class="contenuAccueil">
 	<div class="wrapperButton">
 	<button type="button" class="don"> Faire un don</button>
 	<button type="button" class="testament"> Don par testament</button>
@@ -604,7 +604,10 @@ margin-top:90vmin;
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">Nouvelle-1</div>
+		<div class="swiper-slide"><?php the_field('titre-1')?></br>
+								<?php the_field('image-1')?></br>
+								<?php the_field('lien-1')?>
+							</div>
         <div class="swiper-slide">Nouvelle-2</div>
         <div class="swiper-slide">Nouvelle-3</div>
     </div>

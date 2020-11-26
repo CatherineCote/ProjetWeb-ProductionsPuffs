@@ -16,16 +16,86 @@ C'est le moment d'effacer ce commentaire et d'écrire du vrai
  /*ARTICLE.......................................................*/
  .contenu{
   display: flex;
-  color:red;
-	
+  color:white;
+  width:75%;
+  justify-content:space-between;
+  margin-left:15%;
+  margin-top:10%;
   }
   .colonneGauche{
-  width: 80%;
+  width: 25%;
+  height:85vmin;
+  background-color:black;
+  opacity:0.5;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  text-align:center;
+  padding:15px;
   
   }
   .colonneDroite{
-  width: 20%;
-  color:black;
+  width: 60%;
+  color:white;
+  background-color:rgba(9, 118, 165,0.5);
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  padding:5%;
+  }
+  
+  p{
+    color:white;
+  }
+  .titreArticle{
+    display:flex;
+    justify-content:center;
+  }
+  h2{
+    width:20%;
+	height:20vmin;
+	color:white;
+	background-color:black;
+	opacity:0.5;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+  }
+  /*MEDIAQUERIES TABLETTE......................................*/
+  @media screen and (max-width: 768px) and (min-width: 376px){
+    .colonneGauche{
+      font-size:12px;
+      
+      }
+      .colonneDroite{
+      font-size:14px;
+      }
+  }
+  /*MEDIAQUERIES IPHONE......................................*/
+  @media screen and (max-width: 375px) and (min-width: 0px){
+    h2{
+      width:40%;
+    }
+    .contenu{
+      display: flex;
+      color:white;
+      width:100%;
+      justify-content:center;
+      margin-left:0%;
+    flex-wrap:wrap;
+      margin-top:10%;
+      }
+    .colonneGauche{
+      font-size:10px;
+      width:50%;
+      height:100vmin;
+      padding:0px;
+      }
+      .colonneDroite{
+      font-size:12px;
+      width:100%;
+      padding:0px;
+      }
   }
   /*PAGE NORMAL .......................................................*/
   .titre{

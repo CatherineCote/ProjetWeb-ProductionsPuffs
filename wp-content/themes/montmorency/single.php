@@ -13,23 +13,27 @@ if ( have_posts() ) :
 ?>
 
 	<article>
+		<div class="titreArticle">
 		<h2>
 			<?php the_title(); 
 			/* Titre de l'article */ ?>
 		</h2>
+</div>
 		
 <div class="contenu">
-			<div class="colonneGauche">
+			<div class="colonneDroite">
 				<?php the_content(); 
 				/* Affiche le contenu principal de l'article */ ?>
 			</div>
 			
-			<div class="colonneDroite" style="background-color : <?php the_field('couleur_de_fond');?>">
-			<strong>Autre nom</strong>
-			<?php the_field('autre_nom');?><br>
-			<strong>Pays d'origine</strong>
-			<?php the_field('pays_dorigine');?><br>
-			<img src="<?php the_field('logo');?>" alt="">
+			<div class="colonneGauche">
+			<p>Date de début: <br/><?php the_field('date_debut')?></p>
+			<p>Date de fin:<br/> <?php the_field('date_fin')?></p>
+			<p>Lieu : <?php the_field('lieu')?></p>
+			<p><a href="https://www.jedonneenligne.org/fondationlechainon/bal20/">---Paiement en ligne---</a></p>
+			<p>Contactez-nous</p>
+			<h3>--Commandite--</h3>
+			<p><?php the_field('commandite')?></p>
 			</div>
 		</div>
 		
@@ -38,6 +42,14 @@ if ( have_posts() ) :
 		<?php get_template_part( 'partials/metas' ); 
 		// Appel le fichier metas.php dans le dossier partials ?>
 	</article>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+	<script>
+		gsap.from('.contenu',{
+  opacity:0,
+  y:100,
+  delay:0.5
+})
+		</script>
 <?php endwhile; // Fermeture de la boucle ?>
 		
 
