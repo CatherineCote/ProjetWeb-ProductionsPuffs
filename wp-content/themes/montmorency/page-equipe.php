@@ -35,7 +35,6 @@ h2 {
   transform: translateX(150%);
   color: white;
   letter-spacing: 15px;
-  font-family: helvetica;
   font-size: 100%;
 }
 
@@ -466,7 +465,7 @@ label {
 		
 					<div class="sectionPost">
 						<p><span><?php the_field('nom-1')?></span>: <?php the_field('description-1')?></p>
-						<div class="popup"><?php the_field('image-1')?></div>
+						<img class="popup" src="https://images.unsplash.com/photo-1561677843-39dee7a319ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/> 
 					</div>
 					<div class="carte01" id="carte01">
 					<p><?php the_field('description-1')?> </p>

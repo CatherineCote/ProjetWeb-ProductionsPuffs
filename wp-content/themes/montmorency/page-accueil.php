@@ -54,7 +54,7 @@ hr{
 	width:40%;
 	right:0;
 	transform:translateX(-25%);
-	/*background-color:red;*/
+	z-index:9;
 }
 
 .don{
@@ -65,7 +65,21 @@ hr{
 	font-size:15px;
 	height:15vmin;
 	margin-right:5%;
+	transition-duration: 1s;
 }
+.don:hover{
+	background-color:black;
+	opacity:0.5;
+}
+.don a:visited{
+	color:white;
+	text-decoration: none;
+}
+.don a:link{
+	color:white;
+	text-decoration: none;
+}
+
 .testament{
 	border:none;
 	background-color:rgba(9, 118, 165,0.5);
@@ -73,6 +87,19 @@ hr{
 	letter-spacing: 5px;
 	font-size:15px;
 	height:15vmin;
+	transition-duration: 1s;
+}
+.testament:hover{
+	background-color:black;
+	opacity:0.5;
+}
+.testament a:visited{
+	color:white;
+	text-decoration: none;
+}
+.testament a:link{
+	color:white;
+	text-decoration: none;
 }
 .raison{
 	color:white;
@@ -126,7 +153,26 @@ hr{
 	width:100%;
 	height:100%;
 }
-
+.swiper-slide{
+	font-size:15px;
+	line-height:2;
+	text-align:center;
+}
+.extrait{
+	font-size:12px;
+	line-height:1.6;
+	text-align:center;
+}
+.swiper-slide a{
+	background-color:rgba(9, 118, 165,0.5);
+	padding:5%;
+	color:white;
+	font-size:12px;
+	
+}
+.wiper-slide a:active{
+	color:white;
+}
 .wrapperCarrousel{
 position:absolute;
 display:flex;
@@ -469,6 +515,10 @@ hr{
 	font-size:14px;
 	transform:translateX(10%);
 }
+.swiper-slide{
+	font-size:12px;
+}
+
 .carrousel{
 	width:100%;
 	height:40vmin;
@@ -586,8 +636,8 @@ margin-top:90vmin;
 	</div>
 	<div class="contenuAccueil">
 	<div class="wrapperButton">
-	<button type="button" class="don"> Faire un don</button>
-	<button type="button" class="testament"> Don par testament</button>
+	<button type="button" class="don"><a href ="https://lechainon.go.yo.fr/index.php/don/">Faire un don</a></button>
+	<button type="button" class="testament"><a href ="https://lechainon.go.yo.fr/index.php/don/"> Don par testament</a></button>
 	</div>
 	<div class="wrapperRaison"><div class="raison">
 		<h4>Pourquoi faire un don</h4>
@@ -604,12 +654,16 @@ margin-top:90vmin;
     <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
         <!-- Slides -->
-		<div class="swiper-slide"><?php the_field('titre-1')?></br>
-								<?php the_field('image-1')?></br>
-								<?php the_field('lien-1')?>
+		<div class="swiper-slide"><?php the_field('titre-1')?><br>
+		<p class="extrait"> <?php the_field('extrait-1')?></p><br>
+								<a href= <?php the_field('lien-1')?>>voir plus...</a>
 							</div>
-        <div class="swiper-slide">Nouvelle-2</div>
-        <div class="swiper-slide">Nouvelle-3</div>
+		<div class="swiper-slide"><?php the_field('titre-2')?><br>
+		<p class="extrait"><?php the_field('extrait-2')?></p><br>
+								<a href= <?php the_field('lien-2')?>>voir plus...</a></div>
+		<div class="swiper-slide"><?php the_field('titre-3')?><br>
+		<p class="extrait"><?php the_field('extrait-3')?></p><br>
+								<a href= <?php the_field('lien-3')?>>voir plus...</a></div>
     </div>
     <!-- If we need pagination -->
     <div class="swiper-pagination"></div>
