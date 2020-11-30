@@ -21,6 +21,10 @@
 	 Supprimer cette fonction briserait des plugins et fonctionnalité de Wordpress. 
 	 À la limite vous pouvez la déplacer, mais gardez là. */
 ?>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body 

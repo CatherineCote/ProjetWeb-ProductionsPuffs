@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: page-equipe
+ * Template Name: page-gouvernance
  */
 
 // Appel le fichier header.php
@@ -25,18 +25,18 @@ h2 {
 }
 
 .titreEquipe {
-  width: 25%;
+  width: 50%;
   height: 20vmin;
   background-color: black;
   opacity: 0.5;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateX(150%);
+  transform: translateX(50%);
   color: white;
   letter-spacing: 15px;
   font-family: helvetica;
-  font-size: 100%;
+  font-size: 80%;
 }
 
 /*CONTENU...........................................................................*/
@@ -140,9 +140,10 @@ img:hover {
   background-color: black;
   opacity: 0.9;
   position: fixed;
+  top:5%;
   display: none;
   z-index:1;
-  top:10%;
+  top:20%;
 }
 
 .carte03 p {
@@ -159,7 +160,8 @@ img:hover {
   position: fixed;
   display: none;
   z-index:1;
-  top:10%;
+  top:30%;
+  
 }
 
 .carte04 p {
@@ -173,7 +175,7 @@ img:hover {
   height: 50vmin;
   background-color: black;
   opacity: 0.9;
-  top:25%;
+  top:40%;
   position: fixed;
   display: none;
   z-index:1;
@@ -190,7 +192,7 @@ img:hover {
   height: 50vmin;
   background-color: black;
   opacity: 0.9;
-  top:25%;
+  top:50%;
   position: fixed;
   display: none;
   z-index:1;
@@ -209,7 +211,7 @@ img:hover {
   opacity: 0.9;
   position: fixed;
   display: none;
-  top:40%;
+  top:55%;
   z-index:1;
 }
 
@@ -225,7 +227,7 @@ img:hover {
   background-color: black;
   opacity: 0.9;
   position: fixed;
-  top:40%;
+  top:60%;
   display: none;
   z-index:1;
 }
@@ -242,7 +244,7 @@ img:hover {
   background-color: black;
   opacity: 0.9;
   position: fixed;
-  top:55%;
+  top:70%;
   display: none;
   z-index:1;
 }
@@ -259,7 +261,7 @@ img:hover {
   background-color: black;
   opacity: 0.9;
   position: fixed;
-  top:60%;
+  top:75%;
   display: none;
   z-index:1;
 }
@@ -276,7 +278,7 @@ img:hover {
   background-color: black;
   opacity: 0.9;
   position: fixed;
-  top:65%;
+  top:80%;
   display: none;
   z-index:1;
 }
@@ -286,55 +288,9 @@ img:hover {
   transform: translateY(25%);
   left: 10%;
 }
-.carte12 p {
-  font-size: 20px;
-  position: relative;
-  transform: translateY(25%);
-  left: 10%;
-}
-.carte12 {
-  width: 50vmin;
-  height: 50vmin;
-  background-color: black;
-  opacity: 0.9;
-  position: fixed;
-  top:75%;
-  display: none;
-  z-index:1;
-}
 
-.carte13 p {
-  font-size: 20px;
-  position: relative;
-  transform: translateY(25%);
-  left: 10%;
-}
-.carte13 {
-  width: 50vmin;
-  height: 50vmin;
-  background-color: black;
-  opacity: 0.9;
-  position: fixed;
-  top:85%;
-  display: none;
-  z-index:1;
-}
-.carte14 p {
-  font-size: 20px;
-  position: relative;
-  transform: translateY(25%);
-  left: 10%;
-}
-.carte14 {
-  width: 50vmin;
-  height: 50vmin;
-  background-color: black;
-  opacity: 0.9;
-  position: fixed;
-  top:90%;
-  display: none;
-  z-index:1;
-}
+
+
 /*ANIMATION BOUTON X/BACK....................................................................*/
 .outer {
   position: relative;
@@ -408,10 +364,11 @@ label {
 /*MEDIAQUERIES IPHONE (375PX)................................................*/
 @media screen and (max-width: 375px) and (min-width: 0px){
   .titreEquipe{
-  width: 25%;
+  width: 100%;
   height: 15vmin;
   letter-spacing: 5px;
-  font-size: 40%;
+  font-size: 30%;
+  transform: translateX(0%);
   }
   span {
   font-size: 100%;
@@ -433,8 +390,9 @@ label {
 /*MEDIAQUERIES IPHONE (768PX)................................................*/
 @media screen and (max-width: 768px) and (min-width: 376px){
   .titreEquipe{
-  width: 25%;
+  width: 50%;
   height: 15vmin;
+  transform: translateX(50%);
   letter-spacing: 5px;
   font-size: 60%;
   }
@@ -466,7 +424,7 @@ label {
 		
 					<div class="sectionPost">
 						<p><span><?php the_field('nom-1')?></span>: <?php the_field('description-1')?></p>
-						<div class="popup"><?php the_field('image-1')?></div>
+						<img class="popup" src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
 					</div>
 					<div class="carte01" id="carte01">
 					<p><?php the_field('description-1')?> </p>
@@ -485,7 +443,14 @@ label {
 							<label class="x02">Back</label>
 						</div>
 						</div>
-					</div>
+            </div>
+				<div class="sectionPost">
+					<p><span><?php the_field('nom-2')?></span>: <?php the_field('description-2')?></p>
+					<img class="popup02" src="https://images.unsplash.com/photo-1561677843-39dee7a319ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+						
+				</div>
+        
+          
           <div class="carte03" id="carte03">
 					<p></span><?php the_field('description-3')?> </p>
 					<div class="outer">
@@ -493,7 +458,7 @@ label {
 							<label class="x03">Back</label>
 						</div>
 						</div>
-					</div>
+          </div>
           <div class="carte04" id="carte04">
 					<p><?php the_field('description-4')?> </p>
 					<div class="outer">
@@ -502,6 +467,19 @@ label {
 						</div>
 						</div>
 					</div>
+				<h3 class="postEquipe"><?php the_field('titre_poste-3')?></h3>
+					<div class="sectionPost">
+          <p><span><?php the_field('nom-3')?> </span>:<?php the_field('description-3')?> </p>
+					<img class="popup03" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+					
+					</div>
+          <h3 class="postEquipe"><?php the_field('titre_poste-4')?></h3>
+					<div class="sectionPost">
+						<p><span><?php the_field('nom-4')?></span> : <?php the_field('description-4')?></p>
+						<img class="popup04" src="https://images.unsplash.com/photo-1563122870-6b0b48a0af09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+					</div>
+					
+    
           <div class="carte05" id="carte05">
 					<p><?php the_field('description-5')?> </p>
 					<div class="outer">
@@ -509,7 +487,7 @@ label {
 							<label class="x05">Back</label>
 						</div>
 						</div>
-					</div>
+          </div>
           <div class="carte06" id="carte06">
 					<p><?php the_field('description-6')?> </p>
 					<div class="outer">
@@ -517,34 +495,15 @@ label {
 							<label class="x06">Back</label>
 						</div>
 						</div>
-					</div>
-				
-				
-				<div class="sectionPost">
-					<p><span><?php the_field('nom-2')?></span>: <?php the_field('description-2')?></p>
-					<img class="popup02" src="https://images.unsplash.com/photo-1561677843-39dee7a319ca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-	
-					<hr><p><span><?php the_field('nom-3')?> </span>:<?php the_field('description-3')?> </p>
-					<img class="popup03" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-						
-					<hr><p><span><?php the_field('nom-4')?></span>:<?php the_field('description-4')?> </p>
-					<img class="popup04" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
-					
-					<hr><p><span><?php the_field('nom-5')?></span>: <?php the_field('description-5')?></p>
-					<img class="popup05" src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-						
-					<hr><p><span><?php the_field('nom-6')?></span>:<?php the_field('description-6')?></p>
-					<img class="popup06" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80">
-						
-				</div>
-        <div class="carte07" id="carte07">
+          </div>
+          <div class="carte07" id="carte07">
 					<p> <?php the_field('description-7')?></p>
 					<div class="outer">
 						<div class="inner">
 							<label class="x07">Back</label>
 						</div>
 						</div>
-					</div>
+          </div>
           <div class="carte08" id="carte08">
 					<p><?php the_field('description-8')?> </p>
 					<div class="outer">
@@ -552,15 +511,7 @@ label {
 							<label class="x08">Back</label>
 						</div>
 						</div>
-					</div>
-				<h3 class="postEquipe"><?php the_field('titre_poste-3')?></h3>
-					<div class="sectionPost">
-						<p><span><?php the_field('nom-7')?></span> : <?php the_field('description-7')?> </p>
-						<img class="popup07"src="https://images.unsplash.com/photo-1601584795516-9a4541f939f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-						<hr><p><span><?php the_field('nom-7')?></span> : <?php the_field('description-8')?> </p>
-						<img class="popup08" src="https://images.unsplash.com/photo-1573165850883-9b0e18c44bd2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
-						
-					</div>
+          </div>
           <div class="carte09" id="carte09">
 					<p><?php the_field('description-9')?></p>
 					<div class="outer">
@@ -568,13 +519,7 @@ label {
 							<label class="x09">Back</label>
 						</div>
 						</div>
-					</div>
-				<h3 class="postEquipe"><?php the_field('titre_poste-4')?></h3>
-					<div class="sectionPost">
-						<p><span><?php the_field('nom-9')?></span> : <?php the_field('description-9')?></p>
-						<img class="popup09" src="https://images.unsplash.com/photo-1563122870-6b0b48a0af09?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
-					</div>
-					
+          </div>
           <div class="carte10" id="carte10">
 					<p><?php the_field('description-10')?> </p>
 					<div class="outer">
@@ -582,13 +527,7 @@ label {
 							<label class="x10">Back</label>
 						</div>
 						</div>
-					</div>
-				<h3 class="postEquipe"><?php the_field('titre_poste-5')?></h3>
-					<div class="sectionPost">
-						<p><span><?php the_field('nom-10')?> </span>: <?php the_field('description-10')?></p>
-						<img class="popup10" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
-					</div>
-				
+          </div>
           <div class="carte11" id="carte11">
 					<p><?php the_field('description-11')?> </p>
 					<div class="outer">
@@ -596,54 +535,35 @@ label {
 							<label class="x11">Back</label>
 						</div>
 						</div>
-					</div>
-				<h3 class="postEquipe"><?php the_field('titre_poste-6')?></h3>
+          </div>
+          
+				<h3 class="postEquipe"><?php the_field('titre_poste-5')?></h3>
 					<div class="sectionPost">
-						<p><span><?php the_field('nom-11')?></span> :<?php the_field('description-11')?></p>
-						<img class="popup11" src="https://images.unsplash.com/photo-1573497019584-769c02ee89f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
-					</div>
+						<p><span><?php the_field('nom-5')?> </span>: <?php the_field('description-5')?></p>
+						<img class="popup05" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+          <hr>
+          <p><span><?php the_field('nom-6')?> </span> : <?php the_field('description-6')?> </p>
+						<img class="popup06" src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+            <hr>
+            <p><span><?php the_field('nom-7')?> </span> : <?php the_field('description-7')?> </p>
+						<img class="popup07" src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+            <hr>
+            <p><span><?php the_field('nom-8')?> </span> : <?php the_field('description-8')?> </p>
+						<img class="popup08" src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+            <hr>
+           <p><span><?php the_field('nom-9')?> </span> : <?php the_field('description-9')?> </p>
+						<img class="popup09" src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+            <hr>
+            <p><span><?php the_field('nom-10')?> </span> : <?php the_field('description-10')?> </p>
+						<img class="popup10" src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+            <hr>
+            <p><span><?php the_field('nom-11')?> </span> : <?php the_field('description-11')?> </p>
+						<img class="popup11" src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
+            <hr>
+            
+          </div>
 				
-          <div class="carte12" id="carte12">
-					<p><?php the_field('description-12')?> </p>
-					<div class="outer">
-						<div class="inner">
-							<label class="x12">Back</label>
-						</div>
-						</div>
-					</div>
-				<h3 class="postEquipe"><?php the_field('titre_poste-7')?></h3>
-					<div class="sectionPost">
-						<p><span><?php the_field('nom-12')?></span>: <?php the_field('description-12')?></p>
-						<img class="popup12" src="https://images.unsplash.com/photo-1601584795516-9a4541f939f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
-					</div>
-				
-          <div class="carte13" id="carte13">
-					<p><?php the_field('description-13')?></p>
-					<div class="outer">
-						<div class="inner">
-							<label class="x13">Back</label>
-						</div>
-						</div>
-					</div>
-				<h3 class="postEquipe"><?php the_field('titre_poste-8')?></h3>
-					<div class="sectionPost">
-						<p><span><?php the_field('nom-13')?> </span>: <?php the_field('description-13')?> </p>
-						<img class="popup13" src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
-					</div>
-				
-          <div class="carte14" id="carte14">
-					<p><?php the_field('description-14')?> </p>
-					<div class="outer">
-						<div class="inner">
-							<label class="x14">Back</label>
-						</div>
-						</div>
-					</div>
-				<h3 class="postEquipe"><?php the_field('titre_poste-9')?></h3>
-					<div class="sectionPost">
-						<p><span><?php the_field('nom-14')?> </span> : <?php the_field('description-14')?> </p>
-						<img class="popup14" src="https://images.unsplash.com/photo-1573496358961-3c82861ab8f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"/>
-					</div>
+          
 					
 		</div>
 		</div>
@@ -870,63 +790,8 @@ fond11.addEventListener('click', function() {
   //Partie pour cacher le premier formulaire
   document.getElementById("carte11").style.display= "none";
 });
-//CARTE POPUO N12...............................................................
-const carte12 = document.querySelector('.popup12');
-carte12.addEventListener('click', function() {
-  
- console.log("click");
-//Partie pour cacher le premier formulaire
-document.getElementById("carte12").style.display= "flex";
-gsap.from('.carte12',{
-  opacity:0,
-  y:100
-})
-});
-const fond12 = document.querySelector('.x12');
-fond12.addEventListener('click', function() {
-  
-  console.log("remove");
-  //Partie pour cacher le premier formulaire
-  document.getElementById("carte12").style.display= "none";
-});
-//CARTE POPUO N13...............................................................
-const carte13 = document.querySelector('.popup13');
-carte13.addEventListener('click', function() {
-  
- console.log("click");
-//Partie pour cacher le premier formulaire
-document.getElementById("carte13").style.display= "flex";
-gsap.from('.carte13',{
-  opacity:0,
-  y:100
-})
-});
-const fond13 = document.querySelector('.x13');
-fond13.addEventListener('click', function() {
-  
-  console.log("remove");
-  //Partie pour cacher le premier formulaire
-  document.getElementById("carte13").style.display= "none";
-});
-//CARTE POPUO N14...............................................................
-const carte14 = document.querySelector('.popup14');
-carte14.addEventListener('click', function() {
-  
- console.log("click");
-//Partie pour cacher le premier formulaire
-document.getElementById("carte14").style.display= "flex";
-gsap.from('.carte14',{
-  opacity:0,
-  y:100
-})
-});
-const fond14 = document.querySelector('.x14');
-fond14.addEventListener('click', function() {
-  
-  console.log("remove");
-  //Partie pour cacher le premier formulaire
-  document.getElementById("carte14").style.display= "none";
-});
+
+
 </script>
 <?php endwhile; // Fermeture de la boucle ?>
 
