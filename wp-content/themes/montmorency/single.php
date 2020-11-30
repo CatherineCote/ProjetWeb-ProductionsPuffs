@@ -30,7 +30,6 @@ if ( have_posts() ) :
 			<p>Date de début: <br/><?php the_field('date_debut')?></p>
 			<p>Date de fin:<br/> <?php the_field('date_fin')?></p>
 			<p>Lieu : <?php the_field('lieu')?></p>
-			<p><a href="https://www.jedonneenligne.org/fondationlechainon/bal20/">---Paiement en ligne---</a></p>
 			<p>Contactez-nous</p>
 			<h3>--Commandite--</h3>
 			<p><?php the_field('commandite')?></p>
