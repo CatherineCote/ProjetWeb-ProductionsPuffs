@@ -530,10 +530,10 @@ if ( have_posts() ) :
 	<div class="contenuSectionsNouvelles">
 		<div class="wrapperNouvelle">
 			<div class="section2019"> 2019 <a href="https://lechainon.go.yo.fr/index.php/2020/11/30/bal-2019-du-chainon/"><img src="http://85.lechainon.org/wp-content/uploads/2019/05/305A5840.jpg"></a> </div>
-			<div class="section2018"> 2018 <a href="https://lechainon.go.yo.fr/index.php/2020/11/30/le-bal-2019-du-chainon-qui-se-tenait-le-jeudi-28-novembre-a-connu-un-magnifique-succes/"><img src="http://85.lechainon.org/wp-content/uploads/2019/06/DSC_6839.jpg"></a> </div>
-			<div class="section2017"> 2017 <a href="https://lechainon.go.yo.fr/index.php/2020/11/30/competition-sportive/"><img src="http://85.lechainon.org/wp-content/uploads/2019/06/5_BalAnnChainon-4.jpg"></a> </div>
-			<div class="section2016"> 2016 <a href="https://lechainon.go.yo.fr/section2016nouvelles/"><img src="http://85.lechainon.org/wp-content/uploads/2019/06/Fondation_Le_Chainon_Gala_2016_IMG_3199_Photo_Marc_Gibert_ADECOM_2.jpg"></a> </div>
-			<div class="section2015"> 2015 <a href="https://lechainon.go.yo.fr/section2015nouvelles/"><img src="http://85.lechainon.org/wp-content/uploads/2019/06/DSC_5588.jpg"></a> </div>
+			<div class="section2018"> 2018 <a href="https://lechainon.go.yo.fr/index.php/2020/12/01/6e-bal-annuel-du-chainon-2018/"><img src="http://85.lechainon.org/wp-content/uploads/2019/06/DSC_6839.jpg"></a> </div>
+			<div class="section2017"> 2017 <a href="https://lechainon.go.yo.fr/index.php/2020/12/01/inauguration-du-parc-yvonne-maisonneuve/"><img src="http://85.lechainon.org/wp-content/uploads/2019/06/5_BalAnnChainon-4.jpg"></a> </div>
+			<div class="section2016"> 2016 <a href="https://lechainon.go.yo.fr/index.php/2020/12/01/320-000-recoltes-lors-du-4e-gala-annuel-du-chainon/"><img src="http://85.lechainon.org/wp-content/uploads/2019/06/Fondation_Le_Chainon_Gala_2016_IMG_3199_Photo_Marc_Gibert_ADECOM_2.jpg"></a> </div>
+			<div class="section2015"> 2015 <a href="https://lechainon.go.yo.fr/index.php/2020/12/01/lagence-uber-offre-un-site-web-au-chainon/"><img src="http://85.lechainon.org/wp-content/uploads/2019/06/DSC_5588.jpg"></a> </div>
 		</div>	
 	</div>
 		
