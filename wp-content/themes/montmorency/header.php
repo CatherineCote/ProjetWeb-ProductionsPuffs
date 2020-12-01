@@ -31,6 +31,321 @@
 		 etc. */
 	?>
 >
+<style>
+	body,
+html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 150px;
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  font-family: Noto Sans KR;
+  position: fixed;
+  top:0;
+  z-index:10;
+}
+
+.logo img {
+  width: 300px;
+  position: relative;
+  left: 20px;
+  transition-duration: 0.8s;
+}
+
+.logo img:hover{
+  transform: scale(0.8);
+  transition-duration: 0.8s;
+}
+
+.nav {
+  position: absolute;
+  right: 150px;
+  flex-wrap: nowrap;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: #d1cdcd;
+  font-size: 20px;
+  transition-duration: 0.8s;
+  
+}
+
+.nav a:hover{
+  color:#04a1e6;
+  transition-duration: 0.8s;
+}
+
+a {
+  text-decoration: none;
+}
+
+.lang {
+  position: absolute;
+  right: 40px;
+}
+
+.lang button {
+  font-size: 20px;
+  background-color: #707070;
+  border: 0;
+  color: #333333;
+  padding: 10px 5px;
+  cursor: pointer;
+  transition-duration: 0.8s;
+}
+
+.lang button:hover{
+  background-color:#04a1e6;
+  transition-duration: 0.8s;
+}
+
+.burger {
+  width: 50px;
+  height: 50px;
+  background-color: #707070;
+  opacity: 0.5;
+  position: absolute;
+  top: 175px;
+  left: 25px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.l1 {
+  width: 35px;
+  height: 2px;
+  background-color: #3a96c5;
+  opacity: 1;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.l2 {
+  width: 20px;
+  height: 2px;
+  background-color: #3a96c5;
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 7.5px;
+  transform: translateY(-50%);
+}
+
+.l3 {
+  width: 35px;
+  height: 2px;
+  background-color: #3a96c5;
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  opacity: 0;
+  width: 350px;
+  top: 0;
+  height: 100vh;
+  background-color: #04a1e6;
+  z-index: 2;
+}
+
+.menu a,
+.menu button {
+  position: relative;
+  color: #d1cdcd;
+  top: 185px;
+  left: 100px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  transition-duration: 0.8s;
+}
+
+.menu a:hover{
+  color:#50a9dd;
+  transition-duration: 0.8s;
+}
+
+.donMenu{
+  background-color: #50a9dd;
+  padding:10px 5px;
+  border:0;
+  width: 75px;
+}
+
+.donMenu:hover{
+    background-color: #056791;
+    transition-duration: 0.8s;
+  }
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    height: 100px;
+  }
+
+  .logo img {
+    width: 200px;
+    left: 20px;
+  }
+
+  .nav {
+    right: 100px;
+  }
+
+  .nav a {
+    font-size: 12px;
+  }
+
+  .lang {
+    right: 20px;
+  }
+
+  .lang button {
+    font-size: 12px;
+    padding: 5px 3px;
+  }
+
+  .burger {
+    width: 40px;
+    height: 40px;
+    top: 125px;
+  }
+
+  .l1 {
+    width: 30px;
+  }
+
+  .l2 {
+    width: 20px;
+    left: 5px;
+  }
+
+  .l3 {
+    width: 30px;
+  }
+
+  .menu {
+    width: 275px;
+  }
+
+  .menu a,
+  .menu button {
+    top: 130px;
+    left: 100px;
+    font-size: 12px;
+  }
+  
+  .donMenu{
+  background-color: #50a9dd;
+  padding:10px 5px;
+  border:0;
+  width: 50px;
+}
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    height: 75px;
+  }
+
+  .logo img {
+    width: 150px;
+    left: 20px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .lang {
+    display: none;
+  }
+
+  .burger {
+    width: 30px;
+    height: 30px;
+    background-color: #707070;
+    opacity: 0.5;
+    position: absolute;
+    right: 20px;
+    left: auto;
+    top: 20px;
+  }
+
+  .l1 {
+    width: 20px;
+  }
+
+  .l2 {
+    width: 10px;
+    left: 5px;
+  }
+
+  .l3 {
+    width: 20px;
+  }
+
+  .mobile {
+    display: block;
+  }
+  
+  .menu {
+    width: 175px;
+    right:0;
+  }
+
+  .menu a,
+  .menu button {
+    position: relative;
+    color: #d1cdcd;
+    top: 100px;
+    left: 50px;
+    margin-bottom: 50px;
+    font-size: 12px;
+    tacenter
+  }
+  
+  .langMenu{
+    width: 40px;
+    height: 20px;
+    background-color: #707070;
+    border: 0;
+    cursor:pointer;
+    
+  }
+  
+  .langMenu:hover{
+    background-color: #056791;
+    transition-duration: 0.8s;
+  }
+  
+  .donMenu{
+    background-color: #50a9dd;
+    padding:10px 5px;
+    border:0;
+    width: 50px;
+  }
+  
+}
+
+</style>
 
 <header>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans KR">

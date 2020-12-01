@@ -3,7 +3,6 @@
  * Template Name: Page Contact
  * Modèle permettant d'afficher une page.
  */
-wp_enqueue_style('style-nicolas', get_theme_file_uri('style-nicolas.css'));
 // Appel le fichier header.php
 get_header(); 
 
@@ -12,6 +11,138 @@ if ( have_posts() ) :
 	// Si oui, bouclons au travers les pages (logiquement, il n'y en aura qu'une)
 	while ( have_posts() ) : the_post(); 
 ?>
+<style>
+	body,
+	HTML {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	background-color:#333333;
+	}
+
+	.pageContact {
+	background-color:#333333;
+	width: 100%;
+	height: 100%;
+	font-family: Noto Sans KR;
+	top: 150px;
+  	position: absolute;
+	}
+
+	.panneau1 {
+	background-color:rgba(9, 118, 165,0.5);
+	width: 200vw;
+	height: 300px;
+	transform: rotate(-5deg);
+	position: absolute;
+	left: -20px;
+	top: -150px;
+	}
+
+	.panneau2 {
+	background-color: rgba(9, 118, 165,0.5);
+	width: 200vw;
+	height: 300px;
+	transform: rotate(5deg);
+	position: absolute;
+	left: -20px;
+	bottom: -150px;
+	}
+
+	.titreContact {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #d1cdcd;
+	}
+
+	.sectionContact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	z-index: 2;
+	position: absolute;
+	}
+
+	.formContact {
+	display: flex;
+	flex-wrap: wrap;
+	width: 400px;
+	background-color: #056791;
+	border-radius: 10px;
+	padding: 25px;
+	color: #d1cdcd;
+	border: 5px solid #363636;
+	}
+
+	.input {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin-top: 20px;
+	}
+
+	.prenom {
+	margin-top: 0;
+	}
+
+	.input input,
+	.input select,
+	.input textarea {
+	width: 300px;
+	background-color: #d1cdcd;
+	border: none;
+	}
+
+	.btnContact {
+	background-color: #d1cdcd;
+	color: #056791;
+	border: none;
+	padding: 10px;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-top: 25px;
+	font-size: 20px;
+	border-radius: 15px;
+	}
+
+	@media screen and (max-width: 900px) {
+	.titreContact {
+		font-size: 25px;
+	}
+
+	.input {
+		font-size: 14px;
+	}
+	}
+
+	@media screen and (max-width: 600px) {
+	.titreContact {
+		font-size: 22px;
+	}
+
+	.input {
+		font-size: 12px;
+		flex-direction: column;
+		position: relative;
+		margin-top: 10px;
+		justify-content: center;
+	}
+
+	.btnContact {
+		font-size: 15px;
+	}
+
+	.formContact {
+		width: 300px;
+	}
+}
+
+</style>
 
 	<article>
 		<h2>

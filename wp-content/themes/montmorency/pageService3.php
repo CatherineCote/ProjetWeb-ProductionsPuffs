@@ -12,14 +12,89 @@ if ( have_posts() ) :
 	// Si oui, bouclons au travers les pages (logiquement, il n'y en aura qu'une)
 	while ( have_posts() ) : the_post(); 
 ?>
+<style>
+	body,
+HTML {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #333333;
+}
 
+.panneau1 {
+  background-color: rgba(9, 118, 165,0.5);
+  width: 200vw;
+  height: 300px;
+  transform: rotate(-5deg);
+  position: absolute;
+  left: -20px;
+  top: -150px;
+}
+
+.panneau2 {
+  background-color: rgba(9, 118, 165,0.5);
+  width: 200vw;
+  height: 300px;
+  transform: rotate(5deg);
+  position: absolute;
+  left: -20px;
+  bottom: -150px;
+}
+
+.pageService {
+  background-color: #333333;
+  width: 100%;
+  height: 100%;
+  font-family: Noto Sans KR;
+  color: #d1cdcd;
+}
+
+.titreService {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.textService {
+  position: absolute;
+  top: 200px;
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .titreService {
+    font-size: 25px;
+  }
+
+  .textService h2 {
+    font-size: 20px;
+  }
+
+  .textService p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .titreService {
+    font-size: 22px;
+  }
+
+  .textService h2 {
+    font-size: 18px;
+  }
+
+  .textService p {
+    font-size: 12px;
+  }
+}
+
+</style>
 	<article>
-		<h2>
-			
-		</h2>
-
-		
-
 		<div class="pageService">
 			<div class="panneau1"></div>
 			<div class="panneau2"></div>
