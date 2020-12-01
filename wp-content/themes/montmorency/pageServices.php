@@ -27,15 +27,14 @@ if ( have_posts() ) :
 			<h1 class="titreServices"><?php the_title(); ?></h1>
 
 			<div class="textServices">
-				<h2 class="soustitreServices">Nous sommes là pour vous</h2>
-				<p class="messageServices">Vous êtes une femme âgée de 18 ans et plus et vivez des problèmes ? Nos intervenantes sont formées pour vous écouter et vous aider en toute discrétion.</br>
-				Vous avez besoin d'aide? Appelez-nous en tout temps au 514 845-0151 ou parcourez cette section pour connaître nos services.
+				<h2 class="soustitreServices"><?php the_field('sous_titre'); ?></h2>
+				<p class="messageServices"><?php the_field('message'); ?>
 				</p>
 				<div class="sectionServices">
-				<p><a href="" class="bold"><?php the_field('titreServices_1'); ?>Écoute et référence</a></br><?php the_field('services_1'); ?></p>
-				<p><a href="" class="bold"><?php the_field('titreServices_2'); ?>Hébergement </a></br><?php the_field('services_2'); ?>Selon vos besoins, nous pouvons vous venir en aide avec différentes formules d’hébergement.</p>
-				<p><a href="" class="bold"><?php the_field('titreServices_3'); ?>Post-hébergement </a></br><?php the_field('services_3'); ?>La Relance favorise chez les participantes le retour à l’autonomie socio-économique et personnelle et contribue à une amélioration générale de leurs conditions de vie.</p>
-				<p><a href="" class="bold"><?php the_field('titreServices_4'); ?>Soutien complémentaire </a></br><?php the_field('services_4'); ?>Les résidantes du Chaînon bénéficient d’une multitude de petites attentions qui visent à créer un sentiment de confiance en soi et en l’avenir.</p>
+				<p><a href="" class="bold"><?php the_field('titreServices_1'); ?></a></br><?php the_field('services_1'); ?></p>
+				<p><a href="" class="bold"><?php the_field('titreServices_2'); ?> </a></br><?php the_field('services_2'); ?></p>
+				<p><a href="" class="bold"><?php the_field('titreServices_3'); ?></a></br><?php the_field('services_3'); ?></p>
+				<p><a href="" class="bold"><?php the_field('titreServices_4'); ?></a></br><?php the_field('services_4'); ?></p>
 				</div>
 			</div>
 			</div>
