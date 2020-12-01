@@ -28,6 +28,7 @@ HTML {
   height: 125px;
   background-color: #333333;
   font-family: Noto Sans KR;
+  z-index:10;
 }
 
 .logoFoot {
@@ -154,7 +155,7 @@ a {
     top: 15px;
   }
   .info {
-    width: auto;
+    width: 200px;
     font-size: 10px;
     right: 30px;
     left: auto;
@@ -175,25 +176,22 @@ a {
 <footer>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans KR">
 		<div class="footer">
-			<a href="" class="logoFoot">
+			<a href="https://lechainon.go.yo.fr/" class="logoFoot">
 			<img src="https://i.imgur.com/QjZ7sMt.png" alt="logo">
 			</a>
 			<div class="social">
-			<a href="https://www.facebook.com/lechainonmontreal">Facebook</a>
-			<a href="https://twitter.com/lechainonmtl">Twitter</a>
-			<a href="https://www.instagram.com/lechainon_mtl/">Instagram</a>
+			<a href="https://www.facebook.com/lechainonmontreal"><?php the_field('facebook'); ?>Facebook</a>
+			<a href="https://twitter.com/lechainonmtl"><?php the_field('twitter'); ?>Twitter</a>
+			<a href="https://www.instagram.com/lechainon_mtl/"><?php the_field('instagram'); ?>Instagram</a>
 			</div>
 			<div class="droitAuteur">
-			©2020 // Association d'entraide Le Chaînon inc. Tous droits réservés.
+			<?php the_field('droit'); ?>
 			</div>
 			<div class="info">
-			JOINDRE LE CHAÎNON <br />
-			4373, ave. de l'Esplanade
-			Montréal (Québec) H2W 1T2<br />
-			514 845-0151
+			<?php the_field('info'); ?>
 			</div>
-			<div class="donFoot"><button>Faire un don</button></div>
-			<div class="prod">Les Productions Puffs</div>
+			<div class="donFoot"><a href="https://lechainon.go.yo.fr/don/"><button><?php the_field('don'); ?>Faire un don</button></a></div>
+			<div class="prod"><?php the_field('prod'); ?></div>
 		</div>
 </footer>
 
