@@ -516,7 +516,7 @@ if ( have_posts() ) :
 	</div>
 		
 	 <div class="nouvelleRecente">
-		<p> Récent : 10e Tournoi de Golf S'Élancer pour Elles </p>
+		<p> <?php the_field('recent')?> </p>
 				<!-- Swiper -->
 				<div class="swiper-container">
 			<div class="swiper-wrapper">
@@ -529,19 +529,17 @@ if ( have_posts() ) :
 
 	<div class="contenuSectionsNouvelles">
 		<div class="wrapperNouvelle">
-			<div class="section2019"> 2019 <img src="http://85.lechainon.org/wp-content/uploads/2019/05/305A5840.jpg"> </div>
-			<div class="section2018"> 2018 <img src="http://85.lechainon.org/wp-content/uploads/2019/06/DSC_6839.jpg"></div>
-			<div class="section2017"> 2017 <img src="http://85.lechainon.org/wp-content/uploads/2019/06/5_BalAnnChainon-4.jpg"> </div>
-			<div class="section2016"> 2016 <img src="http://85.lechainon.org/wp-content/uploads/2019/06/Fondation_Le_Chainon_Gala_2016_IMG_3199_Photo_Marc_Gibert_ADECOM_2.jpg"></div>
-			<div class="section2015"> 2015 <img src="http://85.lechainon.org/wp-content/uploads/2019/06/DSC_5588.jpg"></div>
+			<div class="section2019"> 2019 <a href="https://lechainon.go.yo.fr/index.php/2020/11/30/bal-2019-du-chainon/"><img src="http://85.lechainon.org/wp-content/uploads/2019/05/305A5840.jpg"></a> </div>
+			<div class="section2018"> 2018 <a href="https://lechainon.go.yo.fr/index.php/2020/11/30/le-bal-2019-du-chainon-qui-se-tenait-le-jeudi-28-novembre-a-connu-un-magnifique-succes/"><img src="http://85.lechainon.org/wp-content/uploads/2019/06/DSC_6839.jpg"></a> </div>
+			<div class="section2017"> 2017 <a href="https://lechainon.go.yo.fr/index.php/2020/11/30/competition-sportive/"><img src="http://85.lechainon.org/wp-content/uploads/2019/06/5_BalAnnChainon-4.jpg"></a> </div>
+			<div class="section2016"> 2016 <a href="https://lechainon.go.yo.fr/section2016nouvelles/"><img src="http://85.lechainon.org/wp-content/uploads/2019/06/Fondation_Le_Chainon_Gala_2016_IMG_3199_Photo_Marc_Gibert_ADECOM_2.jpg"></a> </div>
+			<div class="section2015"> 2015 <a href="https://lechainon.go.yo.fr/section2015nouvelles/"><img src="http://85.lechainon.org/wp-content/uploads/2019/06/DSC_5588.jpg"></a> </div>
 		</div>	
 	</div>
 		
 	<div class="InformationBal2019">
-		<h3 class="titreBal2019"> Prestigieux Bal 2019 du Chainon </h3>
-		<h4 class="texteBal2019"> La campagne annuelle de souscription bat son plein. Les donateurs et supporters du Chaînon sont appelés à faire un don destiné à financer les services d’aide et d’hébergement offerts aux femmes en difficulté. Les dons ponctuels et mensuels sont acceptés avec reconnaissance.
-
-Vous aussi pouvez participer à cet élan de générosité. </h4>
+		<h3 class="titreBal2019"> <?php the_field('titre_bal_2019')?> </h3>
+		<h4 class="texteBal2019"> <?php the_field('texte_bal_2019')?> </h4>
 	</div>
 
 	</div>
