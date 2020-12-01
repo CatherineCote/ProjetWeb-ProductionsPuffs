@@ -12,7 +12,7 @@ Version: 1.0
    width: 100%;
    height: 100%;
    overflow-x: hidden;
-  background-color: #363636;
+  background-color: #333333;
 
  }
 
@@ -20,7 +20,7 @@ Version: 1.0
  .header {
    width: 100%;
    height: 150px;
-   background-color: #363636;
+   background-color:#333333;
    display: flex;
    align-items: center;
    font-family: Noto Sans KR;
@@ -181,7 +181,7 @@ Version: 1.0
   align-items: center;
   width: 100%;
   height: 125px;
-  background-color: #363636;
+  background-color: #333333;
   font-family: Noto Sans KR;
   z-index: 2;
 }
@@ -249,7 +249,7 @@ a {
 }
  
  .pageValeur {
-  background-color: #363636;
+  background-color:#333333;
   width: 100%;
   height: 100%;
   font-family: Noto Sans KR;
@@ -258,7 +258,7 @@ a {
 }
 
 .panneau1 {
-  background-color: #056791;
+  background-color: #0976A5;
   width: 200vw;
   height: 300px;
   transform: rotate(-5deg);
@@ -268,7 +268,7 @@ a {
 }
 
 .panneau2 {
-  background-color: #056791;
+  background-color: #0976A5;
   width: 200vw;
   height: 300px;
   transform: rotate(5deg);
@@ -313,7 +313,7 @@ a {
 }
 
 .pageServices {
-  background-color: #363636;
+  background-color:#333333;
   width: 100%;
   height: 100%;
   font-family: Noto Sans KR;
@@ -375,7 +375,7 @@ a {
 }
 
 .pageService {
-  background-color: #363636;
+  background-color: #333333;
   width: 100%;
   height: 100%;
   font-family: Noto Sans KR;
