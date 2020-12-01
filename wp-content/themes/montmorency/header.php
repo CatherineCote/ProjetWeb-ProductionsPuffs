@@ -350,17 +350,17 @@ a {
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans KR">
 	<div class="header">
 		<div class="logo">
-			<a href="https://lechainon.go.yo.fr/">
+			<a href="<?php the_field('lien_accueil'); ?>">
 			<img src="https://i.imgur.com/QjZ7sMt.png" alt="logo">
 			</a>
 		</div>
 		<div class="nav">
-			<a href="https://lechainon.go.yo.fr/evenement/"><?php the_field('evenements'); ?></a>
-			<a href="https://lechainon.go.yo.fr/nouvelle/"><?php the_field('nouvelles'); ?></a>
-			<a href="https://lechainon.go.yo.fr/contact/"><?php the_field('joindre'); ?></a>
+			<a href="<?php the_field('lien_evenements'); ?>"><?php the_field('evenements'); ?></a>
+			<a href="<?php the_field('lien_nouvelles'); ?>"><?php the_field('nouvelles'); ?></a>
+			<a href="<?php the_field('lien_contact'); ?>"><?php the_field('joindre'); ?></a>
 		</div>
 		<div class="lang">
-			<a href="https://lechainon.go.yo.fr/en/"><button><?php the_field('lang'); ?></button></a>
+			<a href="<?php the_field('lien_lang'); ?>"><button><?php the_field('langue'); ?></button></a>
 		</div>
 		<div class="burger">
 			<div class="l1"></div>
@@ -368,16 +368,16 @@ a {
 			<div class="l3"></div>
 		</div>
 		<div class="menu">
-			<a href="https://lechainon.go.yo.fr/nos-services/"><?php the_field('services'); ?></a>
-			<a href="https://lechainon.go.yo.fr/histoire/"><?php the_field('histoire'); ?></a>
-			<a href="https://lechainon.go.yo.fr/nos-valeurs/"><?php the_field('valeurs'); ?></a>
-			<a href="https://lechainon.go.yo.fr/equipes/"><?php the_field('equipe'); ?></a>
-			<a href="https://lechainon.go.yo.fr/partenaires/"><?php the_field('partenaires'); ?></a>
-			<a class="mobile" href="https://lechainon.go.yo.fr/evenement/"><?php the_field('evenements'); ?></a>
-			<a class="mobile" href="https://lechainon.go.yo.fr/nouvelle/"><?php the_field('nouvelles'); ?></a>
-			<a class="mobile" href="https://lechainon.go.yo.fr/contact/"><?php the_field('joindre'); ?></a>
-			<a href="https://lechainon.go.yo.fr/en/"><button class="mobile langMenu"><?php the_field('lang'); ?></button></a>
-			<a href="https://lechainon.go.yo.fr/don/"><button class="donMenu"><?php the_field('don'); ?></button></a>
+			<a href="<?php the_field('lien_services'); ?>"><?php the_field('services'); ?></a>
+			<a href="<?php the_field('lien_histoire'); ?>"><?php the_field('histoire'); ?></a>
+			<a href="<?php the_field('lien_valeurs'); ?>"><?php the_field('valeurs'); ?></a>
+			<a href="<?php the_field('lien_equipe'); ?>"><?php the_field('equipe'); ?></a>
+			<a href="<?php the_field('lien_partenaires'); ?>"><?php the_field('partenaires'); ?></a>
+			<a class="mobile" href="<?php the_field('lien_evenements'); ?>"><?php the_field('evenements'); ?></a>
+			<a class="mobile" href="<?php the_field('lien_nouvelles'); ?>"><?php the_field('nouvelles'); ?></a>
+			<a class="mobile" href="<?php the_field('lien_contact'); ?>"><?php the_field('joindre'); ?></a>
+			<a href="<?php the_field('lien_lang'); ?>"><button class="mobile langMenu"><?php the_field('langue'); ?></button></a>
+			<a href="<?php the_field('lien_don'); ?>"><button class="donMenu"><?php the_field('don'); ?></button></a>
 		</div>
 	</div>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script><script  src="./script.js"></script>
