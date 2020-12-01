@@ -1,0 +1,692 @@
+/*
+Theme Name: Montmorency
+Author: Simon Arnold
+Author URI: https://smnarnold.com
+Description: Thème de base pour apprendre à faire un site Wordpress.
+Version: 1.0
+-------------------------------------------------------------- */
+
+ body,
+ html {
+   margin: 0;
+   width: 100%;
+   height: 100%;
+   overflow-x: hidden;
+  background-color: #333333;
+
+ }
+
+ 
+ .header {
+   width: 100%;
+   height: 150px;
+   background-color:#333333;
+   display: flex;
+   align-items: center;
+   font-family: Noto Sans KR;
+   position: fixed;
+   z-index: 10;
+   top:0;
+ }
+ 
+ .logo img {
+   width: 300px;
+   position: relative;
+   left: 20px;
+   transition-duration: 0.8s;
+ }
+
+ .logo img:hover{
+  transform: scale(0.8);
+  transition-duration: 0.8s;
+}
+ 
+ .nav {
+   position: absolute;
+   right: 150px;
+   flex-wrap: nowrap;
+ }
+ 
+ .nav a {
+   margin-left: 20px;
+   color: #d1cdcd;
+   font-size: 20px;
+   transition-duration: 0.8s;
+ }
+
+ .nav a:hover{
+  color:#04a1e6;
+  transition-duration: 0.8s;
+}
+ 
+ a {
+   text-decoration: none;
+ }
+ 
+ .lang {
+   position: absolute;
+   right: 40px;
+ }
+ 
+ .lang button {
+   font-size: 20px;
+   background-color: #707070;
+   border: 0;
+   color: #d1cdcd;
+   padding: 10px 5px;
+   cursor: pointer;
+   transition-duration: 0.8s;
+ }
+
+ .lang button:hover{
+  background-color:#04a1e6;
+  transition-duration: 0.8s;
+}
+ 
+ .burger {
+   width: 50px;
+   height: 50px;
+   background-color: #707070;
+   opacity: 0.5;
+   position: absolute;
+   top: 175px;
+   left: 25px;
+   cursor: pointer;
+   z-index: 4;
+ }
+ 
+ .l1 {
+   width: 35px;
+   height: 2px;
+   background-color: #3a96c5;
+   opacity: 1;
+   position: absolute;
+   top: 25%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+ 
+ .l2 {
+   width: 20px;
+   height: 2px;
+   background-color: #3a96c5;
+   opacity: 1;
+   position: absolute;
+   top: 50%;
+   left: 7.5px;
+   transform: translateY(-50%);
+ }
+ 
+ .l3 {
+   width: 35px;
+   height: 2px;
+   background-color: #3a96c5;
+   opacity: 1;
+   position: absolute;
+   top: 75%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
+ 
+ .menu {
+   display: none;
+   flex-direction: column;
+   position: absolute;
+   opacity: 0;
+   width: 350px;
+   top: 0;
+   height: 100vh;
+   background-color: #04a1e6;
+   z-index: 3;
+ }
+ 
+ .menu a,
+ .menu button {
+   position: relative;
+   color: #d1cdcd;
+   top: 185px;
+   left: 100px;
+   margin-bottom: 50px;
+   font-size: 20px;
+   transition-duration: 0.8s;
+ }
+ 
+ .donMenu{
+   background-color: #50a9dd;
+   padding:10px 5px;
+   border:0;
+   width: 75px;
+   transition-duration: 0.8s;
+ }
+
+ .menu a:hover{
+  color:#50a9dd;
+  transition-duration: 0.8s;
+}
+
+.donMenu:hover{
+  background-color: #056791;
+  transition-duration: 0.8s;
+}
+ 
+ .mobile {
+   display: none;
+ }
+
+
+ .footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 125px;
+  background-color: #333333;
+  font-family: Noto Sans KR;
+  z-index: 2;
+}
+
+.logoFoot {
+  transform: translateX(-50%);
+  position: absolute;
+  left: 50%;
+}
+
+.logoFoot img {
+  width: 200px;
+}
+
+.social {
+  position: absolute;
+  right: 2%;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social a {
+  color: #d1cdcd;
+}
+
+a {
+  text-decoration: none;
+}
+
+.droitAuteur {
+  font-size: 10px;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.info {
+  width: 200px;
+  font-size: 15px;
+  color: #d1cdcd;
+  position: absolute;
+  left: 10px;
+}
+
+.donFoot {
+  width: 75px;
+  position: absolute;
+  left: 25%;
+}
+
+.donFoot button {
+  background-color: #3a96c5;
+  border: 0;
+  padding: 5px 10px;
+  color: #d1cdcd;
+  cursor: pointer;
+}
+
+.prod {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5px;
+}
+ 
+ .pageValeur {
+  background-color:#333333;
+  width: 100%;
+  height: 100%;
+  font-family: Noto Sans KR;
+  top: 150px;
+  position:absolute;
+}
+
+.panneau1 {
+  background-color: #0976A5;
+  width: 200vw;
+  height: 300px;
+  transform: rotate(-5deg);
+  position: absolute;
+  left: -20px;
+  top: -150px;
+}
+
+.panneau2 {
+  background-color: #0976A5;
+  width: 200vw;
+  height: 300px;
+  transform: rotate(5deg);
+  position: absolute;
+  left: -20px;
+  bottom: -150px;
+}
+
+.titreValeur {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #d1cdcd;
+}
+
+.textValeur {
+  position: absolute;
+  width: 80%;
+  max-width: 700px;
+  height: 100%;
+  z-index: 2;
+  color: #d1cdcd;
+  margin-top: 150px;
+}
+
+.sectionValeur {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.textValeur h2 {
+  text-align: center;
+}
+
+.textValeur p {
+  margin-bottom: 50px;
+}
+
+.pageServices {
+  background-color:#333333;
+  width: 100%;
+  height: 100%;
+  font-family: Noto Sans KR;
+  color: #d1cdcd;
+  top: 150px;
+  position:absolute;
+}
+
+.titreServices {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.textServices {
+  top: 200px;
+  width: 100%;
+  position: absolute;
+}
+
+.soustitreServices {
+  text-align: center;
+}
+
+.messageServices {
+  position: relative;
+  text-align: center;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sectionServices {
+  width: 80%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sectionServices p {
+  flex-basis: 47%;
+  background-color: #056791;
+  border-radius: 15px;
+  padding: 5px;
+  margin: 5px 5px;
+  border: 2px solid #d1cdcd;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  color: #d1cdcd;
+}
+
+.pageService {
+  background-color: #333333;
+  width: 100%;
+  height: 100%;
+  font-family: Noto Sans KR;
+  color: #d1cdcd;
+  top: 150px;
+  position:absolute;
+}
+
+.titreService {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.textService {
+  position: absolute;
+  top: 200px;
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+ @media screen and (max-width: 900px) {
+   .header {
+     height: 100px;
+   }
+ 
+   .logo img {
+     width: 200px;
+     left: 20px;
+   }
+ 
+   .nav {
+     right: 100px;
+   }
+ 
+   .nav a {
+     font-size: 12px;
+   }
+ 
+   .lang {
+     right: 20px;
+   }
+ 
+   .lang button {
+     font-size: 12px;
+     padding: 5px 3px;
+   }
+ 
+   .burger {
+     width: 40px;
+     height: 40px;
+     top: 125px;
+   }
+ 
+   .l1 {
+     width: 30px;
+   }
+ 
+   .l2 {
+     width: 20px;
+     left: 5px;
+   }
+ 
+   .l3 {
+     width: 30px;
+   }
+ 
+   .menu {
+     width: 275px;
+   }
+ 
+   .menu a,
+   .menu button {
+     top: 130px;
+     left: 100px;
+     font-size: 12px;
+   }
+   
+   .donMenu{
+   background-color: #50a9dd;
+   padding:10px 5px;
+   border:0;
+   width: 50px;
+ }
+
+ .logoFoot img {
+  width: 125px;
+}
+.footer {
+  height: 85px;
+}
+.social {
+  font-size: 12px;
+  right: 2%;
+  width: 200px;
+}
+.droitAuteur {
+  font-size: 8px;
+  width: 150px;
+}
+.info {
+  width: 175px;
+  font-size: 12px;
+}
+.donFoot {
+  width: 50px;
+  left: 28%;
+}
+
+.donFoot button {
+  padding: 5px 5px;
+  font-size: 12px;
+}
+
+.prod {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+}
+
+ .titreValeur {
+  font-size: 25px;
+}
+
+.textValeur h2 {
+  font-size: 20px;
+}
+
+.textValeur p {
+  font-size: 14px;
+}
+
+.titreServices {
+  font-size: 25px;
+}
+
+.textServices h2 {
+  font-size: 20px;
+}
+
+.textServices p {
+  font-size: 14px;
+}
+
+.titreService {
+  font-size: 25px;
+}
+
+.textService h2 {
+  font-size: 20px;
+}
+
+.textService p {
+  font-size: 14px;
+}
+ }
+ 
+ @media screen and (max-width: 600px) {
+   .header {
+     height: 75px;
+   }
+ 
+   .logo img {
+     width: 150px;
+     left: 20px;
+   }
+ 
+   .nav {
+     display: none;
+   }
+ 
+   .lang {
+     display: none;
+   }
+ 
+   .burger {
+     width: 30px;
+     height: 30px;
+     background-color: #707070;
+     opacity: 0.5;
+     position: absolute;
+     right: 20px;
+     left: auto;
+     top: 20px;
+   }
+ 
+   .l1 {
+     width: 20px;
+   }
+ 
+   .l2 {
+     width: 10px;
+     left: 5px;
+   }
+ 
+   .l3 {
+     width: 20px;
+   }
+ 
+   .mobile {
+     display: block;
+   }
+   
+   .menu {
+     width: 175px;
+     right:0;
+   }
+ 
+   .menu a,
+   .menu button {
+     position: relative;
+     color: #d1cdcd;
+     top: 100px;
+     left: 50px;
+     margin-bottom: 50px;
+     font-size: 12px;
+   }
+   
+   .langMenu{
+     width: 40px;
+     height: 20px;
+     background-color: #707070;
+     border: 0;
+     cursor:pointer;
+   }
+     .donMenu{
+   background-color: #50a9dd;
+   padding:10px 5px;
+   border:0;
+   width: 50px;
+ }
+
+ .logoFoot img {
+  width: 125px;
+}
+.footer {
+  height: 300px;
+}
+.social {
+  font-size: 12px;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 75px;
+}
+.droitAuteur {
+  font-size: 8px;
+  width: 100%;
+  text-align: center;
+  top: 15px;
+}
+.info {
+  width: auto;
+  font-size: 10px;
+  right: 30px;
+  left: auto;
+  bottom: 10px;
+}
+.donFoot {
+  width: 50px;
+  left: 30px;
+  bottom: 10px;
+}
+
+.prod {
+  top: 75px;
+}
+
+ .titreValeur {
+  font-size: 22px;
+}
+
+.textValeur h2 {
+  font-size: 18px;
+}
+
+.textValeur p {
+  font-size: 12px;
+}
+
+.titreServices {
+  font-size: 22px;
+}
+
+.textServices h2 {
+  font-size: 18px;
+}
+
+.textServices p {
+  font-size: 12px;
+}
+
+.titreService {
+  font-size: 22px;
+}
+
+.textService h2 {
+  font-size: 18px;
+}
+
+.textService p {
+  font-size: 12px;
+}
+ }
+
+
+
+
+
+
+ 
