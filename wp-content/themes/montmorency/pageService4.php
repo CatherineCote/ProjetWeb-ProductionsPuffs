@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page Service1
+ * Template Name: Page Service4
  * Modèle permettant d'afficher une page.
  */
 
@@ -18,16 +18,13 @@ if ( have_posts() ) :
 			
 		</h2>
 
-		
-
 		<div class="pageService">
 			<div class="panneau1"></div>
 			<div class="panneau2"></div>
 			<h1 class="titreService"><?php the_title(); ?></h1>
 			<div class="textService">
 				<h2><?php the_field('sous_titre'); ?></h2>
-				<p>
-					<?php the_content(); ?>
+				<p><?php the_content(); ?>
 				</p>
 			</div>
 		</div>

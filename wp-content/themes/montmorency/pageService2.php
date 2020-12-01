@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Page Service1
+ * Template Name: Page Service2
  * Modèle permettant d'afficher une page.
  */
 
@@ -18,7 +18,8 @@ if ( have_posts() ) :
 			
 		</h2>
 
-		
+		<?php the_content(); 
+		/* Affiche le contenu principal de la page */ ?>
 
 		<div class="pageService">
 			<div class="panneau1"></div>
@@ -26,10 +27,19 @@ if ( have_posts() ) :
 			<h1 class="titreService"><?php the_title(); ?></h1>
 			<div class="textService">
 				<h2><?php the_field('sous_titre'); ?></h2>
-				<p>
-					<?php the_content(); ?>
-				</p>
-			</div>
+				<p><span class="bold"><?php the_field('titreMessage1'); ?></span></br>
+				<?php the_field('message1'); ?></br></br>
+				<span class="bold"><?php the_field('titreMessage2'); ?></span></br>
+				<?php the_field('message2'); ?></br></br>
+				<span class="bold"><?php the_field('titreMessage3'); ?></span></br>
+				<?php the_field('message3'); ?></br></br>
+				<span class="bold"><?php the_field('titreMessage4'); ?></span> </br>
+				<?php the_field('message4'); ?></br></br>
+				<span class="bold"><?php the_field('titreMessage5'); ?></span></br>
+				<?php the_field('message5'); ?>
+
+    </p>
+  </div>
 		</div>
 
 	</article>
