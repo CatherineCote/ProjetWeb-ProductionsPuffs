@@ -49,6 +49,7 @@ html {
   position: fixed;
   top:0;
   z-index:10;
+  border-bottom: 5px solid rgba(9, 118, 165,0.5);
 }
 
 .logo img {
@@ -100,6 +101,7 @@ a {
   cursor: pointer;
   transition-duration: 0.8s;
 }
+
 
 .lang button:hover{
   background-color:#04a1e6;
@@ -163,8 +165,7 @@ a {
   z-index: 2;
 }
 
-.menu a,
-.menu button {
+.menu a {
   position: relative;
   color: #d1cdcd;
   top: 185px;
@@ -184,6 +185,8 @@ a {
   padding:10px 5px;
   border:0;
   width: 75px;
+  color: #d1cdcd;
+  font-size: 20px;
 }
 
 .donMenu:hover{
@@ -245,11 +248,10 @@ a {
     width: 275px;
   }
 
-  .menu a,
-  .menu button {
+  .menu a{
     top: 130px;
     left: 100px;
-    font-size: 12px;
+    font-size: 14px;
   }
   
   .donMenu{
@@ -257,6 +259,7 @@ a {
   padding:10px 5px;
   border:0;
   width: 50px;
+  font-size: 14px;
 }
 }
 
@@ -311,15 +314,13 @@ a {
     right:0;
   }
 
-  .menu a,
-  .menu button {
+  .menu a {
     position: relative;
     color: #d1cdcd;
     top: 100px;
     left: 50px;
     margin-bottom: 50px;
     font-size: 12px;
-    tacenter
   }
   
   .langMenu{
@@ -328,7 +329,7 @@ a {
     background-color: #707070;
     border: 0;
     cursor:pointer;
-    
+    color: #d1cdcd;
   }
   
   .langMenu:hover{
@@ -356,12 +357,12 @@ a {
 			</a>
 		</div>
 		<div class="nav">
-			<a href="">Événements</a>
-			<a href="">Nouvelles</a>
-			<a href="">Nous Joindre</a>
+			<a href=""><?php the_field('evenements'); ?></a>
+			<a href=""><?php the_field('nouvelles'); ?></a>
+			<a href=""><?php the_field('joindre'); ?></a>
 		</div>
 		<div class="lang">
-			<button>ENG</button>
+			<a href=""><button><?php the_field('lang'); ?></button></a>
 		</div>
 		<div class="burger">
 			<div class="l1"></div>
@@ -369,16 +370,16 @@ a {
 			<div class="l3"></div>
 		</div>
 		<div class="menu">
-			<a href="">Nos services</a>
-			<a href="">Histoire</a>
-			<a href="">Valeur</a>
-			<a href="">Equipe</a>
-			<a href="">Partenaire</a>
-			<a class="mobile" href="">Événements</a>
-			<a class="mobile" href="">Nouvelles</a>
-			<a class="mobile" href="">Nous Joindre</a>
-			<button class="mobile langMenu">ENG</button>
-			<button class="donMenu">Faire un don</button>
+			<a href=""><?php the_field('services'); ?></a>
+			<a href=""><?php the_field('histoire'); ?></a>
+			<a href=""><?php the_field('valeurs'); ?></a>
+			<a href=""><?php the_field('equipe'); ?></a>
+			<a href=""><?php the_field('partenaires'); ?></a>
+			<a class="mobile" href=""><?php the_field('evenements'); ?></a>
+			<a class="mobile" href=""><?php the_field('nouvelles'); ?></a>
+			<a class="mobile" href=""><?php the_field('joindre'); ?></a>
+			<a href=""><button class="mobile langMenu"><?php the_field('lang'); ?></button></a>
+			<a href=""><button class="donMenu"><?php the_field('don'); ?></button></a>
 		</div>
 	</div>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'></script><script  src="./script.js"></script>
@@ -401,10 +402,7 @@ a {
 	</h1>
 
 	<nav>
-		<?php 
-			// Affiche un menu si dans le tableau de bord un menu à été défini dans cet emplacement
-			wp_nav_menu( array( 'theme_location' => 'main-menu' ) );
-		?>
+		
 	</nav>
 
 	<?php 
