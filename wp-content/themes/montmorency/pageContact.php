@@ -30,39 +30,39 @@ if ( have_posts() ) :
 				<div class="formContact">
 
 				<div class="input prenom">
-					<label for="">Prénom</label>
+					<label for=""><?php the_field('prenom'); ?></label>
 					<input type="text">
 				</div>
 
 				<div class="input nom">
-					<label for="">Nom</label>
+					<label for=""><?php the_field('nom'); ?></label>
 					<input type="text">
 				</div>
 
 				<div class="input email">
-					<label for="">Courriel</label>
+					<label for=""><?php the_field('courriel'); ?></label>
 					<input type="email">
 				</div>
 
 				<div class="input raison">
-					<label for="">Raison</label>
+					<label for=""><?php the_field('raison'); ?></label>
 					<select>
-					<option value="information">Information</option>
-					<option value="probleme">Probleme</option>
-					<option value="emploi">Emlpoi</option>
-					<option value="autre">Autre</option>
+					<option value="information"><?php the_field('information'); ?></option>
+					<option value="probleme"><?php the_field('probleme'); ?></option>
+					<option value="emploi"><?php the_field('emploi'); ?></option>
+					<option value="autre"><?php the_field('autre'); ?></option>
 					</select>
 				</div>
 
 				<div class="input sujet">
-					<label for="">Sujet</label>
+					<label for=""><?php the_field('sujet'); ?></label>
 					<input type="text">
 				</div>
 				<div class="input message">
-					<label for="">Message</label>
+					<label for=""><?php the_field('message'); ?></label>
 					<textarea></textarea>
 				</div>
-				<button class="btnContact">Envoyer</button>
+				<button class="btnContact"><?php the_field('envoyer'); ?></button>
 				</div>
 			</div>
 		</div>
