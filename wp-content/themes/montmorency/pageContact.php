@@ -3,7 +3,7 @@
  * Template Name: Page Contact
  * Modèle permettant d'afficher une page.
  */
-
+wp_enqueue_style('style-nicolas', get_theme_file_uri('style-nicolas.css'));
 // Appel le fichier header.php
 get_header(); 
 
@@ -68,6 +68,7 @@ if ( have_posts() ) :
 		</div>
 
 	</article>
+	
 <?php endwhile; // Fermeture de la boucle ?>
 
 <?php else : // Si aucune page correspondante n'a été trouvée ?>
