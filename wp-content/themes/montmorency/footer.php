@@ -176,13 +176,13 @@ a {
 <footer>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans KR">
 		<div class="footer">
-			<a href="https://lechainon.go.yo.fr/" class="logoFoot">
+			<a href="<?php the_field('lien_accueil'); ?>" class="logoFoot">
 			<img src="https://i.imgur.com/QjZ7sMt.png" alt="logo">
 			</a>
 			<div class="social">
-			<a href="https://www.facebook.com/lechainonmontreal"><?php the_field('facebook'); ?>Facebook</a>
-			<a href="https://twitter.com/lechainonmtl"><?php the_field('twitter'); ?>Twitter</a>
-			<a href="https://www.instagram.com/lechainon_mtl/"><?php the_field('instagram'); ?>Instagram</a>
+			<a href="<?php the_field('lien_facebook'); ?>"><?php the_field('facebook'); ?></a>
+			<a href="<?php the_field('lien_twitter'); ?>"><?php the_field('twitter'); ?></a>
+			<a href="<?php the_field('lien_instagram'); ?>"><?php the_field('instagram'); ?></a>
 			</div>
 			<div class="droitAuteur">
 			<?php the_field('droit'); ?>
@@ -190,7 +190,7 @@ a {
 			<div class="info">
 			<?php the_field('info'); ?>
 			</div>
-			<div class="donFoot"><a href="https://lechainon.go.yo.fr/don/"><button><?php the_field('don'); ?>Faire un don</button></a></div>
+			<div class="donFoot"><a href="<?php the_field('lien_don'); ?>"><button><?php the_field('don'); ?></button></a></div>
 			<div class="prod"><?php the_field('prod'); ?></div>
 		</div>
 </footer>
