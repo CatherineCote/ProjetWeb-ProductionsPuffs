@@ -153,10 +153,10 @@ if ( have_posts() ) :
 				<p class="messageServices"><?php the_field('message'); ?>
 				</p>
 				<div class="sectionServices">
-				<p><a href="" class="bold"><?php the_field('titreServices_1'); ?></a></br><?php the_field('services_1'); ?></p>
-				<p><a href="" class="bold"><?php the_field('titreServices_2'); ?> </a></br><?php the_field('services_2'); ?></p>
-				<p><a href="" class="bold"><?php the_field('titreServices_3'); ?></a></br><?php the_field('services_3'); ?></p>
-				<p><a href="" class="bold"><?php the_field('titreServices_4'); ?></a></br><?php the_field('services_4'); ?></p>
+				<p><a href="https://lechainon.go.yo.fr/ecoute-et-reference/" class="bold"><?php the_field('titreServices_1'); ?></a></br><?php the_field('services_1'); ?></p>
+				<p><a href="https://lechainon.go.yo.fr/hebergement/" class="bold"><?php the_field('titreServices_2'); ?> </a></br><?php the_field('services_2'); ?></p>
+				<p><a href="https://lechainon.go.yo.fr/post-hebergement/" class="bold"><?php the_field('titreServices_3'); ?></a></br><?php the_field('services_3'); ?></p>
+				<p><a href="https://lechainon.go.yo.fr/soutien-complementaire/" class="bold"><?php the_field('titreServices_4'); ?></a></br><?php the_field('services_4'); ?></p>
 				</div>
 			</div>
 			</div>
