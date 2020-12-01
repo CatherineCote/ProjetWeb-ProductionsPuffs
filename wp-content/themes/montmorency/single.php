@@ -27,9 +27,9 @@ if ( have_posts() ) :
 			</div>
 			
 			<div class="colonneGauche">
-			<p>Date de début: <br/><?php the_field('date_debut')?></p>
-			<p>Date de fin:<br/> <?php the_field('date_fin')?></p>
-			<p>Lieu : <?php the_field('lieu')?></p>
+			<p><br/><?php the_field('date_debut')?></p>
+			<p><br/> <?php the_field('date_fin')?></p>
+			<p><?php the_field('lieu')?></p>
 			<p>Contactez-nous</p>
 			<h3>--Commandite--</h3>
 			<p><?php the_field('commandite')?></p>

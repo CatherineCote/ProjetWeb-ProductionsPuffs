@@ -113,7 +113,7 @@ if ( have_posts() ) :
 	transition-duration: 1s;
 }
 h2{
-	width:20%;
+	width:25%;
 	height:20vmin;
 	color:white;
 	background-color:black;
@@ -121,6 +121,8 @@ h2{
 	display:flex;
 	justify-content:center;
 	align-items:center;
+	letter-spacing: 15px;
+  font-size: 150%;
 }
 .titre{
 	display:flex;
@@ -240,6 +242,8 @@ h2{
 h2{
 	width:75%;
 	height:20vmin;
+	letter-spacing: 10px;
+  font-size: 100%;
 	
 }
 img{
